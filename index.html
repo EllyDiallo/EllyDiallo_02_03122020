@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-<!DOCTYPE html>
 <html lang="fr-FR">
 <head>
     <meta charset="UTF-8">
@@ -14,9 +13,10 @@
     
     <header>
         <div class="logo">
-
+            <img src="/images/logo/Reservia.svg" alt="logo Resiervia">
         </div>
-        <nav>
+        <nav class="menu">
+            
 
         </nav>
     </header>
@@ -28,11 +28,11 @@
         
         <form>
             
-            <li class="rech">
-            <ul><i class="fas fa-map-marker-alt"></i> </ul>
-            <ul><label for="search"><i class="fas fa-map-marker-alt"></i></label><input type="search" name="search" id="search" maxlength="8" placeholder="Marseille, France" ></ul>
-            <ul><input type="submit" value="Recherchez"></ul>
-            </li>
+            <ul class="rech">
+                <li><i class="fas fa-map-marker-alt"></i> </li>
+                <li><label for="search"><i class="fas fa-map-marker-alt"></i></label><input type="search" name="search" id="search" maxlength="8" placeholder="Marseille, France" ></li>
+                <li><input type="submit" value="Recherchez"></li>
+            </ul>
 
         </form>
         <div class="esp">
@@ -41,12 +41,12 @@
             <p class="espg">Plus de 500 logements sont disponibles dans cette ville</p>
         
         </div>
-        <li class="ico"> Filtres
-            <ul class="ic"><i class="fas fa-money-bill-wave"></i>Économique</ul>
-            <ul class="ic"><i class="fas fa-child"></i>Familial</ul>
-            <ul class="ic"><i class="fas fa-heart"></i>Romantique</ul>
-            <ul class="ic"><i class="fas fa-dog"></i>Animaux autorisés</ul>
-        </li>
+        <ul class="ico"> Filtres
+            <li class="ic"><i class="fas fa-money-bill-wave"></i>Économique</li>
+            <li class="ic"><i class="fas fa-child"></i>Familial</li>
+            <li class="ic"><i class="fas fa-heart"></i>Romantique<li>
+            <li class="ic"><i class="fas fa-dog"></i>Animaux autorisés</li>
+        </ul>
     </section>
     
     <section class="heb">
@@ -70,10 +70,11 @@
     </section>
     
     <footer>
-        <li>A propos</li>
-        <li>Nos hébergements</li>
-        <li>Assistance</li>
-
+        <ul>
+            <li>A propos</li>
+            <li>Nos hébergements</li>
+            <li>Assistance</li>
+        </ul>
     </footer>
     <i class="fas fa-map-marker-alt"></i>
     <i class="fas fa-dog"></i>
