@@ -1,5 +1,6 @@
 body{
     font-family: 'Raleway', sans-serif;
+    margin: 40px 40px 40px 40px;
     
 }
 
@@ -34,14 +35,42 @@ li {
 }
 
 
-.corps{
+.hebergements{
     display: flex;
+    justify-content: space-between;
 }
 .heberg{
+    
     background-color:rgb(242, 242, 242) ;
+    width: 65%;
+   height: 500px;
+   padding: 30px 30px 30px 30px;
+
+}
+
+.h_à_m{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    height: 72%;
+}
+
+.h_à_m  img{
+  
+   width: 250px;
+   height: 120px;
+     
 }
 .pop{
     background-color:rgb(242, 242, 242) ;
+    width: 25%;
+}
+
+
+
+.acti{
+    align-self: flex-start;
 }
 footer {
     background-color:rgb(242, 242, 242) ;
