@@ -38,13 +38,15 @@ li {
 .hebergements{
     display: flex;
     justify-content: space-between;
+    height: auto;
+    width: auto;
 }
 .heberg{
     
     background-color:rgb(242, 242, 242) ;
     width: 65%;
-   height: 500px;
-   padding: 30px 30px 30px 30px;
+    height: auto;
+    padding: 30px 30px 30px 30px;
 
 }
 
@@ -52,19 +54,22 @@ li {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    align-items: center;
-    height: 72%;
+    height: auto;
+    width: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
 
 .h_à_m  img{
   
-   width: 250px;
-   height: 120px;
+   width: 255px;
+   height: 110px;
+   object-fit: cover;
      
 }
 .pop{
     background-color:rgb(242, 242, 242) ;
-    width: 25%;
+    width: auto;
 }
 
 
@@ -74,4 +79,7 @@ li {
 }
 footer {
     background-color:rgb(242, 242, 242) ;
+}
+figure{
+    margin: 0px;
 }
