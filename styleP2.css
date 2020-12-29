@@ -42,44 +42,134 @@ li {
     width: auto;
 }
 .heberg{
-    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     background-color:rgb(242, 242, 242) ;
     width: 65%;
-    height: auto;
+    height: 570px;
     padding: 30px 30px 30px 30px;
+    border-radius: 20px;
 
 }
-
 .h_à_m{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     height: auto;
     width: auto;
-    margin-top: 30px;
-    margin-bottom: 30px;
 }
 
 .h_à_m  img{
   
-   width: 255px;
-   height: 110px;
-   object-fit: cover;
+    width: 260px;
+    height: 110px;
+    object-fit: cover;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
      
 }
+
 .pop{
     background-color:rgb(242, 242, 242) ;
-    width: auto;
+    width: 25%;
+    height: 570px;
+    border-radius: 20px;
+    padding: 30px 30px 30px 30px;
+    
+}
+.popu h1, .heberg h1{
+    display: inline-block;
+    font-size: 25px;
+ 
 }
 
 
+.popu{
+    display: flex;
+    justify-content: space-between;
+    
+}
+.popu p{
+    height: 16px;
+    width: 32px;
+    margin-top: 25px;
+}
+
+.l_p_p{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.l_p_p img{
+  
+    width: 110px;
+    height: 115px;
+    object-fit: cover;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+      
+ }
+
+ .figu{
+    margin-right: 1%;
+    margin-left: 0px;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    background-color: white;
+    border-radius: 20px;
+    padding: 5px;
+    height: auto;
+}
+
+.figh{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding-left: 10px;
+}
+
+.figh p{
+    margin: 5px 5px 0px 5px;
+}
+
+.figup{
+    display: flex;
+    background-color: white;
+    border-radius: 20px;
+    padding: 5px;
+    height: auto;
+    width: 90%;
+    
+    
+    
+}
+
+.figp{
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+.figp p{
+    margin: 0px;
+    justify-content: flex-start;
+}
+
+.st{
+    padding-left: 4px;
+    padding-bottom: 4px;
+}
+.stp{
+    display: flex;
+    margin-top: 30px;
+    
+}
 
 .acti{
     align-self: flex-start;
 }
 footer {
     background-color:rgb(242, 242, 242) ;
-}
-figure{
-    margin: 0px;
 }
