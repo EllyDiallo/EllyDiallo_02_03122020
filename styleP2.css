@@ -74,7 +74,7 @@ span.loc{     /*icône de localisation*/
     border: 1px solid #F2F2F2;
     border-top-left-radius:15px;
     border-bottom-left-radius:15px;
-    background-color:  #F2F2F2;
+    background-color:  #F2F2F3;
 }
 
 body > section.trouv > div.formu > span > i{/*span icône localisation*/
@@ -177,11 +177,14 @@ p.infopara { /*paragraphe d'information*/
     width: auto;
 }
 
-.popu h1, .heberg h1{/*titres*/
+.heberg h1{/*titres hébergement*/
     padding-left: 2.6%;
     margin: 0px;
-    margin-block-start: 0em;
-    margin-block-end: 0em;
+}
+
+body > section.hebergements > aside > div.popu > h1{
+    padding-left: 7%;/*titres populaires*/
+    margin: 0px;
 }
 
 .nomlieu{
@@ -512,10 +515,15 @@ body > footer > ul{/*Liste footer*/
     margin-right: 13rem;
     margin-bottom: 0%;
     margin-left: 2rem;
-    font-weight: 900;
 }
+
 body > footer > ul > li{/*ligne liste footer*/
     margin-top: 1rem;
     margin-bottom:0%;
     font-weight: 500;
+}
+
+
+body > footer > ul > li:nth-child(1){
+    font-weight: bold;
 }
