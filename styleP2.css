@@ -1,10 +1,10 @@
+/*-----------------------------------------------------------Général-------------------------------------------------------------------*/
+
 body{
     font-family: 'Raleway', sans-serif;
     margin: 4.8%;
     margin-right: 3.5%;
     font-size: 16px;
-    
-    
 }
 
 h1{
@@ -15,82 +15,69 @@ h1{
 p {
     font-size: 1rem;
 }
+
 figure{
     display: inline-block;
-    
 }
 
-/*form .fas {
-    background-color:rgb(242, 242, 242) ;
-    font-size: 65px;
-}*/
-
-/*.menu ul {
+li {
+    list-style: none;
     display: flex;
-    background-color: aqua;
-    
-}*/
+}
+/*---------------------------------------------------------------header--------------------------------------------------------------------------*/
+
+header{
+    justify-content: space-between;
+    display: flex;
+}
+/*-------------------------------menu*/
 nav.menu{
     width: 33%;
-    
 }
+
 nav.menu ul{
     display: flex;
     justify-content: space-around;
     text-align: center;
     padding: 0%;
 }
+/* 3 différents éléments nav*/
 .heb{
     color: #0065FC ;
     font-weight: 500;
 }
+
 .ac{
     font-weight: 600;
 }
+
 .ins{
     color: #0065FC ;
     font-weight: bolder;
 }
 
-/*.esp .fas*/.fa-info-circle:before {
-    
-    color: white;
-    border: 2px solid  #F2F2F2;
-    background-color:  #0065FC;
-    font-size: 1.2rem;
-    border-radius: 50%;
-}
-
-p.espg {
-    padding-left: 10px;
-}
-
+/*----------------------------------------------------section "Trouvez votre hébergement"-----------------------------------------*/
 
 .trouv h1{
     margin-bottom: 0%;
 }
-/*.rech{
-    display: flex;
-} */
+/*------------------------------------------------formulaire*/
 .formu{
-    
     display: inline-flex;
     border: 1px solid #F2F2F2;
     width:auto;
     height: auto;
     border-radius: 15px;
-    
-    
-   
 }
-span.loc{
-    
+
+span.loc{     /*icône de localisation*/
     border: 1px solid #F2F2F2;
     border-top-left-radius:15px;
     border-bottom-left-radius:15px;
     background-color:  #F2F2F2;
 }
-body > section.trouv > div.formu > span > i{
+
+body > section.trouv > div.formu > span > i{/*span icône localisation*/
     font-size: 16px;
     width: 3rem;
     height: 2.1rem;
@@ -98,9 +85,7 @@ body > section.trouv > div.formu > span > i{
     margin-top: 0.8rem;
 }
 
-
-
-input[type="submit"]{
+input[type="submit"]{/*bouton*/
     cursor:pointer;
     color: white ;
     font-weight: bolder;
@@ -110,42 +95,37 @@ input[type="submit"]{
     border-bottom-right-radius: 15px;
     border: none;
     font-size: 1rem;
-   }
+}
 
-   input#search{
+input#search{/*zone de recherche*/
         border: none;
         padding: 1rem;
         padding-right: 2rem;
         font-size: 1rem;
         font-weight: bold;
-       
-   }
-input#search::placeholder{
+}
+
+input#search::placeholder{/*texte prédéfini*/
     color: black;
     font-weight: bolder;
 }
 
-.esp{
-    display: flex;
-} 
+/*-----------------------------------------div des filtres*/
 .filtres{
     display: flex;
-    
-    
-
 }
+
 .filtres > p{
     padding-top: 1rem;
     margin-right: 1rem;
-    
-}
-.filtres >.ico{
-    display: flex;
-    padding: 0%;
-   
 }
 
-.filtres > .ico > .ic{
+.filtres >.ico{/*div conteneur de l'ensemble des filtres*/
+    display: flex;
+    padding: 0%;
+}
+
+.filtres > .ico > .ic{/*div conteneur filtre*/
     font-weight: bold;
     
     box-sizing: border-box;
@@ -154,7 +134,13 @@ input#search::placeholder{
     border: 2px solid #F2F2F2  ;
     margin-right: 1rem;
 }
-.filtres > .ico > .ic > .fas{
+
+.filtres >.ico > .ic > p {/*paragraphe autour du filtre*/
+    padding: 1rem;
+    margin: 0%;
+}
+
+    .filtres > .ico > .ic > .fas{/*icônes filtres*/
     position: relative;
     top: 0px;
     left: 0px;
@@ -165,39 +151,76 @@ input#search::placeholder{
     border-radius: 50%;
     width: 20px;
     height: 20px;
-    
-    
 }
-.filtres >.ico > .ic > p {
-    padding: 1rem;
-    margin: 0%;
-    
-
-}
-
-li {
-    list-style: none;
+/*--------------------------------------------div information*/
+.info{ /*div "plus de 500 logements"*/
     display: flex;
+} 
+
+.fa-info-circle:before {    /* icône d'information*/
+    color: white;
+    border: 2px solid  #F2F2F2;
+    background-color:  #0065FC;
+    font-size: 1.2rem;
+    border-radius: 50%;
 }
 
-header {
-    justify-content: space-between;
-    display: flex;
+p.infopara { /*paragraphe d'information*/
+    padding-left: 10px;
 }
 
-.hebergements{
+/*-----------------------------------------------------section-centrale"Hébergement"------------------------------------------------*/
+.hebergements{/*section hébergement*/
     display: flex;
     justify-content: space-between;
     height: auto;
     width: auto;
 }
 
-
-footer {
-    background-color:rgb(242, 242, 242) ;
+.popu h1, .heberg h1{/*titres*/
+    padding-left: 2.6%;
+    margin: 0px;
+    margin-block-start: 0em;
+    margin-block-end: 0em;
 }
 
-.heberg{
+.nomlieu{
+    font-size: 1.1rem;
+    font-weight: bolder;
+}
+
+
+.prix{
+    font-weight: bold;
+}
+
+.st{/*div conteneur icônes stars hébergement*/
+    padding-left: 4px;
+    padding-bottom: 4px;
+    display: inline-block;
+}
+
+.stp{/*div conteneur icônes stars populaires*/
+    display: flex;
+    margin-top: 30px;
+}
+
+p.stb, p.stg{/*paragraphe icônes stars*/
+    display: inline-block;
+    margin-right: 0px;
+}
+p.stg{/*paragraphe icône stars grises*/
+    margin-left: 0px;
+}
+p.stg .fas{/*icône stars grise*/
+    color:rgb(218, 218, 218) ;
+}
+
+p.stb .fas{/*icône stars bleues*/
+    color:#0065FC ;
+}
+
+.heberg{/*------------------------div Hébergement à Marseille*/
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -206,41 +229,9 @@ footer {
     height: 100%;
     padding: 1.5%;
     border-radius: 2%;
-
 }
 
-.pop{
-    background-color:rgb(242, 242, 242) ;
-    width: 27.1%;
-    height: 100%;
-    padding: 1.5%;
-    border-radius: 2%;
-    margin-left: 0%;
-    
-}
-
-.popu h1, .heberg h1{
-    padding-left: 2.6%;
-    margin: 0px;
-    margin-block-start: 0em;
-    margin-block-end: 0em;
-}
-body > section.hebergements > aside > div.popu > p{
-    margin-top: 0px;
-    margin-left: 25%;
-}
-
-body > section.hebergements > aside > div.popu > p > i{
-    font-size: 1.5rem;
-}
-
-/*.popu p, .heberg p{
-    display: inline-block;
-    font-size: 25px;
- 
-}*/
-
-.h_à_m{
+.h_à_m{/*conteneur des <figure>*/
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -248,18 +239,8 @@ body > section.hebergements > aside > div.popu > p > i{
     width: auto;
     margin: 0.8rem;
 }
-.popu{
-    display: flex;
-    
-    
-}
-.l_p_p{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 0.8rem;
-}
-.figu{
+
+.figu{/*div conteneur <figure>+<figcaption>*/
     margin-right: 1.1%;
     margin-left: 1%;
     background-color: white;
@@ -269,10 +250,60 @@ body > section.hebergements > aside > div.popu > p > i{
     width: 29.15%;
     min-width: 195px;
     box-shadow: -3px 3px 10px 4px rgba(216, 216, 216, 0.5);
+}
+
+.figh{/*class <figcaption*/
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding-left: 10px;
+}
+
+.figu img{ /*image*/
+  
+    width: 100%;
+    height: 60%;
+    object-fit: cover;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.figh p{/*paragraphe <figcaption>*/
+    margin: 5px 5px 0px 5px;
+}
+
+/*--------------------------------aside"Les plus populaires"-*/
+.pop{/*div "les plus populaires"*/
+    background-color:rgb(242, 242, 242) ;
+    width: 27.1%;
+    height: 100%;
+    padding: 1.5%;
+    border-radius: 2%;
+    margin-left: 0%;
+}
+
+.popu{/*conteneur titre + icône schéma*/
+    display: flex;
     
 }
 
-.figup{
+body > section.hebergements > aside > div.popu > p{
+    margin-top: 0px;/*paragraphe contenant l'icône shéma*/
+    margin-left: 25%;
+}
+
+body > section.hebergements > aside > div.popu > p > i{
+    font-size: 1.5rem;/*icône shéma*/
+}
+
+.l_p_p{/*conteneur <figure>*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0.8rem;
+}
+
+.figup{/*div conteneur <figure>+<figcaption>*/
     display: flex;
     background-color: white;
     border-radius: 20px;
@@ -282,29 +313,17 @@ body > section.hebergements > aside > div.popu > p > i{
     width: 88%;
     box-shadow: -3px 3px 10px 4px rgba(216, 216, 216, 0.5);
 }
-.figh{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    padding-left: 10px;
-}
-.figp{
+
+.figp{/*class <figcaption*/
     display: flex;
     flex-direction: column;
     margin-left: 10px;
     margin-top: 10px;
     width: 66%;
 }
-.figu img{
-  
-    width: 100%;
-    height: 60%;
-    object-fit: cover;
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
-     
-}
-.figup img{
+
+
+.figup img{/*image*/
   
     width: 100%;
     height: 148px;
@@ -312,233 +331,173 @@ body > section.hebergements > aside > div.popu > p > i{
     object-fit: cover;
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
-    
-      
- }
-
-
-.figh p{
-    margin: 5px 5px 0px 5px;
 }
 
-.figup a {
-     width: 45%;
-}
-
-
-
-.figp p{
+.figp p{/*paragraphe <figcaption>*/
     margin: 0px;
     justify-content: flex-start;
 }
 
-.nomlieu{
-    font-size: 1.1rem;
+
+.figup a {/*lien*/
+     width: 45%;
+}
+
+body > section.hebergements > aside > div.l_p_p > figure > figcaption > p.nomlieu{
+    margin-bottom: 0.5rem;/*nom lieu <aside>*/
+}
+
+
+
+
+/*-----------------------------------------------------------section"activitée"--------------------------------------------------------*/
+
+section .activites{/*section activitées*/
+    display: flex;
+}
+
+.actifig{/*figcaption section activitées*/
+    padding: 1rem;
     font-weight: bolder;
 }
 
-
-
-body > section.hebergements > aside > div.l_p_p > figure > figcaption > p.nomlieu{
-    margin-bottom: 0.5rem;
-}
-.prix{
+body > section.hebergements > div > p{
     font-weight: bold;
 }
 
-.st{
-    padding-left: 4px;
-    padding-bottom: 4px;
-    display: inline-block;
+.acti{/*div contenant actiGauche + actiDroite*/
+        display: flex;
+        height: 500px;
+        justify-content: space-between;
+        
 }
 
-p.stb, p.stg{
-    display: inline-block;
-    margin-right: 0px;
-}
-p.stg{
-    margin-left: 0px;
-}
-p.stg .fas{
-    color:rgb(218, 218, 218) ;
-}
-
-p.stb .fas{
-    color:#0065FC ;
-    
-}
-.stp{
+.actiG{/*div Gauche*/
     display: flex;
-    margin-top: 30px;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 48%;
+    background-color: white;
+    height: auto;
+ }
     
-}
-
-section .activites{
-display: flex;
-
-}
-
-.acti{
+ .actiD{/*div Droite*/
     display: flex;
-    height: 500px;
-    justify-content: space-between;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 48%;
+    background-color: white;
+    height: auto;
+    }
     
-}
-.actiG{
-display: flex;
-flex-direction: column;
-flex-wrap: wrap;
-width: 48%;
-background-color: white;
-height: auto;
-
-}
-.actiD{
-display: flex;
-flex-direction: column;
-flex-wrap: wrap;
-width: 48%;
-background-color: white;
-height: auto;
-}
-/*.gauche img{
-    object-fit: cover;
-    height: 400px;
-    width: 46%;
-    
-}*/
 body > section.activites > div > div.actiG > figure.gauche{
-    
-    width: 47%;
+        
+    width: 47%;/*div contenant<figure> de gauche*/
     margin: 0%;
+     margin-right: 6%;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: -3px 3px 10px 4px rgba(216, 216, 216, 0.5);
+}
+
+body > section.activites > div > div.actiD > figure.gauche{
+        
+    width: 47%;/*div contenant<figure> de droite*/
+     margin: 0%;
     margin-right: 6%;
     background-color: white;
     border-radius: 20px;
     box-shadow: -3px 3px 10px 4px rgba(216, 216, 216, 0.5);
+    }
     
-    
-}
-
-
-
-body > section.activites > div > div.actiG > figure.gauche > a > img{
-    height: 430px;
-    object-fit: cover;
-    width: 100%;
-    border-top-right-radius: 20px;
-    border-top-left-radius: 20px;
-    
-    
-}
-
-.haut{
-    
+.haut{/*div contenant <figure> du haut*/
     width: 47%;
     margin: 0%;
     margin-bottom: 2%;
     background-color: white;
     border-radius: 20px;
     box-shadow: -3px 3px 10px 4px rgba(216, 216, 216, 0.5);
-    
 }
-
-.bas{
     
+.bas{/*div contenant <figure> du bas*/
+        
     width: 47%;
     margin: 0px;
     margin-top: 3%;
     background-color: white;
     border-radius: 20px;
     box-shadow: -3px 3px 10px 4px rgba(216, 216, 216, 0.5);
-
 }
-.haut img{
+    
+body > section.activites > div > div.actiG > figure.gauche > a > img{
+    height: 430px;/*image gauche div actigauche*/
+    object-fit: cover;
+    width: 100%;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+}
+    
+    
+.haut img{/*image du haut actigauche*/
     object-fit: cover;
     height: 210px;
     width: 100%;
     border-top-right-radius: 20px;
     border-top-left-radius: 20px;
-    
-    
-    
 }
-
-.bas img{
+    
+.bas img{/*image du bas actigauche*/
     object-fit: cover;
     height: 130px;
-    width: 100%;
+     width: 100%;
     border-top-right-radius: 20px;
     border-top-left-radius: 20px;
-    
 }
-
-body > section.activites > div > div.actiD > figure.gauche{
     
-    width: 47%;
-    margin: 0%;
-    margin-right: 6%;
-    background-color: white;
-    border-radius: 20px;
-    box-shadow: -3px 3px 10px 4px rgba(216, 216, 216, 0.5);
-    
-    
-}
-
-
-
 body > section.activites > div > div.actiD > figure.gauche > a > img{
+    /*image gauche div actiDroite*/
     height: 430px;
     object-fit: cover;
     width: 100%;
     border-top-right-radius: 20px;
     border-top-left-radius: 20px;
-    
-    
 }
-
-.hautD{
     
+.hautD{/*conteneur image haut actiDroite*/
     width: 47%;
     margin: 0%;
     margin-bottom: 2%;
     background-color: white;
     border-radius: 20px;
     box-shadow: -3px 3px 10px 4px rgba(216, 216, 216, 0.5);
-    
 }
-
-.basD{
     
+.basD{/*conteneur image bas actiDroite*/
     width: 47%;
     margin: 0px;
     margin-top: 3%;
     background-color: white;
     border-radius: 20px;
     box-shadow: -3px 3px 10px 4px rgba(216, 216, 216, 0.5);
-
 }
-.hautD img{
+    
+.hautD img{/*image haut div actiDroite*/
     object-fit: cover;
     height: 170px;
     width: 100%;
     border-top-right-radius: 20px;
     border-top-left-radius: 20px;
-    
 }
-
-.basD img{
+    
+.basD img{/*image bas actiDroite*/
     object-fit: cover;
     height: 170px;
     width: 100%;
     border-top-right-radius: 20px;
     border-top-left-radius: 20px;
+}
     
-}
-.actifig{
-    padding: 1rem;
-    font-weight: bolder;
-}
-
+/*-----------------------------------------------------------------footer--------------------------------------------------------------*/
 
 footer{
     display: flex;
@@ -547,7 +506,7 @@ footer{
     margin-top: 3rem;
 }
 
-body > footer > ul{
+body > footer > ul{/*Liste footer*/
     padding-left: 0%;
     margin-top: 2rem;
     margin-right: 13rem;
@@ -555,7 +514,7 @@ body > footer > ul{
     margin-left: 2rem;
     font-weight: 900;
 }
-body > footer > ul > li{
+body > footer > ul > li{/*ligne liste footer*/
     margin-top: 1rem;
     margin-bottom:0%;
     font-weight: 500;
