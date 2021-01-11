@@ -2,12 +2,19 @@
 
 body{
     font-family: 'Raleway', sans-serif;
-    margin: 4.8%;
-    margin-right: 3.5%;
-    font-size: 16px;
+     font-size: 16px;
+}
+
+main{
+    width: 93%;
+    margin: 0px auto;
 }
 
 h1{
+    font-size: 1.5rem;
+    font-weight: bolder;
+}
+h2{
     font-size: 1.5rem;
     font-weight: bolder;
 }
@@ -18,12 +25,23 @@ p {
 
 figure{
     display: inline-block;
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
 }
 
 li {
     list-style: none;
     display: flex;
 }
+
+a:link{
+    text-decoration: none;
+    color: black;
+}
+
+
 /*---------------------------------------------------------------header--------------------------------------------------------------------------*/
 
 header{
@@ -42,20 +60,20 @@ nav.menu ul{
     padding: 0%;
 }
 /* 3 différents éléments nav*/
-.heb{
+
+#heb > a{
     color: #0065FC ;
     font-weight: 500;
 }
 
-.ac{
+#ac > a{
     font-weight: 600;
 }
 
-.ins{
+#ins > a{
     color: #0065FC ;
     font-weight: bolder;
 }
-
 /*----------------------------------------------------section "Trouvez votre hébergement"-----------------------------------------*/
 
 .trouv h1{
@@ -77,7 +95,7 @@ span.loc{     /*icône de localisation*/
     background-color:  #F2F2F3;
 }
 
-body > section.trouv > div.formu > span > i{/*span icône localisation*/
+section.trouv > div.formu > span > i{/*span icône localisation*/
     font-size: 16px;
     width: 3rem;
     height: 2.1rem;
@@ -127,12 +145,24 @@ input#search::placeholder{/*texte prédéfini*/
 
 .filtres > .ico > .ic{/*div conteneur filtre*/
     font-weight: bold;
-    
     box-sizing: border-box;
     border-radius: 40px;
-    height: 55px;
-    border: 2px solid #F2F2F2  ;
+    height: 56px;
+    border: 3px solid #F2F2F2 ;
     margin-right: 1rem;
+
+}
+
+.filtres > .ico > .ic:hover{/*div conteneur filtre au survol*/
+    font-weight: bold;
+    box-sizing: border-box;
+    border-radius: 40px;
+    height: 60px;
+    border: 4px groove #dddada;
+    margin-right: 1rem;
+    background-color: rgb(215, 248, 215);
+    box-shadow: 3px -3px 4px rgba(75, 15, 15, 0.5);
+    
 }
 
 .filtres >.ico > .ic > p {/*paragraphe autour du filtre*/
@@ -152,17 +182,32 @@ input#search::placeholder{/*texte prédéfini*/
     width: 20px;
     height: 20px;
 }
+
+.filtres > .ico > .ic > .fas:hover{/*icônes filtres au survol*/
+    position: relative;
+    top: 0px;
+    left: 0px;
+    color:   #dd7fd5;
+    background-color:rgb(215, 248, 215);
+    text-align: center;
+    padding: 1rem;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+}
 /*--------------------------------------------div information*/
 .info{ /*div "plus de 500 logements"*/
     display: flex;
 } 
 
-.fa-info-circle:before {    /* icône d'information*/
-    color: white;
-    border: 2px solid  #F2F2F2;
-    background-color:  #0065FC;
-    font-size: 1.2rem;
+.fa-info::before {    /* icône d'information*/
+    color:  #0065FC;;
+    border: 2px solid #F2F2F2; 
+    background-color:  white;
     border-radius: 50%;
+    padding: 0.2rem;
+    padding-left: 0.6rem;
+    padding-right: 00.6rem;
 }
 
 p.infopara { /*paragraphe d'information*/
@@ -177,12 +222,12 @@ p.infopara { /*paragraphe d'information*/
     width: auto;
 }
 
-.heberg h1{/*titres hébergement*/
+.heberg h2{/*titres hébergement*/
     padding-left: 2.6%;
     margin: 0px;
 }
 
-body > section.hebergements > aside > div.popu > h1{
+section.hebergements > aside > div.popu > h2{
     padding-left: 7%;/*titres populaires*/
     margin: 0px;
 }
@@ -205,13 +250,14 @@ body > section.hebergements > aside > div.popu > h1{
 
 .stp{/*div conteneur icônes stars populaires*/
     display: flex;
-    margin-top: 30px;
+    margin-top: 15%;
 }
 
 p.stb, p.stg{/*paragraphe icônes stars*/
     display: inline-block;
     margin-right: 0px;
 }
+
 p.stg{/*paragraphe icône stars grises*/
     margin-left: 0px;
 }
@@ -223,6 +269,14 @@ p.stb .fas{/*icône stars bleues*/
     color:#0065FC ;
 }
 
+section.hebergements > div > div > div:nth-child(-n+6) > a > figure > figcaption > div > p.stb{
+    margin: 0px;/*paragraphe autour étoiles bleues*/
+}
+
+section.hebergements > div > div > div:nth-child(-n+6) > a > figure > figcaption > div > p.stg{
+margin: 0px;/*paragraphe autour étoiles grise*/
+}
+
 .heberg{/*------------------------div Hébergement à Marseille*/
     display: flex;
     flex-direction: column;
@@ -230,22 +284,22 @@ p.stb .fas{/*icône stars bleues*/
     background-color:rgb(242, 242, 242) ;
     width: 62.5%;
     height: 100%;
-    padding: 1.5%;
+    padding: 3.5% 1.5%;
     border-radius: 2%;
 }
 
-.h_à_m{/*conteneur des <figure>*/
+.h_à_m{/* div conteneur des <figure>*/
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     height: auto;
     width: auto;
     margin: 0.8rem;
+    margin-top: 0px;
 }
 
-.figu{/*div conteneur <figure>+<figcaption>*/
-    margin-right: 1.1%;
-    margin-left: 1%;
+.figureh{/*div contenant chaque <figure>*/
+    margin: 2.5% 1.5% 2% 1.5%;
     background-color: white;
     border-radius: 20px;
     padding: 5px;
@@ -255,32 +309,43 @@ p.stb .fas{/*icône stars bleues*/
     box-shadow: -3px 3px 10px 4px rgba(216, 216, 216, 0.5);
 }
 
-.figh{/*class <figcaption*/
+.figureh a{ 
+    width: 100%;
+    height: 100%;
+}.figu{
+    width: 100%;
+    margin: 0%;
+    height: auto;
+}
+
+
+.figu img{/*image*/
+  
+    width: 100%;
+    height: 120px;
+    object-fit: cover;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.figh{/*figcaption hébergement*/
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     padding-left: 10px;
 }
 
-.figu img{ /*image*/
-  
-    width: 100%;
-    height: 60%;
-    object-fit: cover;
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
-}
-
-.figh p{/*paragraphe <figcaption>*/
+.figh p{
     margin: 5px 5px 0px 5px;
 }
+
 
 /*--------------------------------aside"Les plus populaires"-*/
 .pop{/*div "les plus populaires"*/
     background-color:rgb(242, 242, 242) ;
     width: 27.1%;
     height: 100%;
-    padding: 1.5%;
+    padding: 3.5% 1.5% 1.5% 1.5%;
     border-radius: 2%;
     margin-left: 0%;
 }
@@ -290,12 +355,12 @@ p.stb .fas{/*icône stars bleues*/
     
 }
 
-body > section.hebergements > aside > div.popu > p{
+div.popu > p{
     margin-top: 0px;/*paragraphe contenant l'icône shéma*/
     margin-left: 25%;
 }
 
-body > section.hebergements > aside > div.popu > p > i{
+div.popu > p > i{
     font-size: 1.5rem;/*icône shéma*/
 }
 
@@ -304,31 +369,32 @@ body > section.hebergements > aside > div.popu > p > i{
     flex-direction: column;
     align-items: center;
     margin: 0.8rem;
+    margin-top: 0px;
 }
 
-.figup{/*div conteneur <figure>+<figcaption>*/
-    display: flex;
+.figurep{/*div contenant chaque figure*/
     background-color: white;
     border-radius: 20px;
-    margin: 1.5%;
+    margin: 4% 1.1% 3.5% 1%;
     padding: 5px;
     height: 150px;
-    width: 88%;
+    width: 100%;
     box-shadow: -3px 3px 10px 4px rgba(216, 216, 216, 0.5);
 }
 
-.figp{/*class <figcaption*/
-    display: flex;
-    flex-direction: column;
-    margin-left: 10px;
-    margin-top: 10px;
-    width: 66%;
+.figurep a{
+    width: 100%;
+    height: 100%;
 }
 
+.figup{ /*<figure> populaire*/
+    display: flex;
+    margin: 0px;
+}
 
-.figup img{/*image*/
+.figup img{
   
-    width: 100%;
+    width: 40%;
     height: 148px;
     max-height: 148px;
     object-fit: cover;
@@ -336,21 +402,24 @@ body > section.hebergements > aside > div.popu > p > i{
     border-bottom-left-radius: 20px;
 }
 
-.figp p{/*paragraphe <figcaption>*/
-    margin: 0px;
-    justify-content: flex-start;
+.figp{/*<figcaption> populaire*/
+    display: flex;
+    flex-direction: column;
+    margin: 5px 5px 0px 5px;
+    width: 60%;
+    height: 100%;
 }
 
-
-.figup a {/*lien*/
-     width: 45%;
+.figp p{
+    margin: 3% 3% 3% 3%;
 }
 
-body > section.hebergements > aside > div.l_p_p > figure > figcaption > p.nomlieu{
-    margin-bottom: 0.5rem;/*nom lieu <aside>*/
+div.l_p_p > div:nth-child(-n+3) > a > figure > figcaption > div > p.stb{
+    margin: 0px;/* paragraphe autour étoile bleues*/
 }
-
-
+div.l_p_p > div:nth-child(-n+3) > a > figure > figcaption > div > p.stg{
+    margin: 0px;/*paragraphe autoour étoiles grises*/
+}
 
 
 /*-----------------------------------------------------------section"activitée"--------------------------------------------------------*/
@@ -364,7 +433,7 @@ section .activites{/*section activitées*/
     font-weight: bolder;
 }
 
-body > section.hebergements > div > p{
+section.hebergements > div > p{
     font-weight: bold;
 }
 
@@ -393,27 +462,34 @@ body > section.hebergements > div > p{
     height: auto;
     }
     
-body > section.activites > div > div.actiG > figure.gauche{
-        
-    width: 47%;/*div contenant<figure> de gauche*/
+.gauche{/*div conteneur <figure> de gauche*/
+    width: 47%;
     margin: 0%;
-     margin-right: 6%;
+    margin-right: 6%;
     background-color: white;
     border-radius: 20px;
     box-shadow: -3px 3px 10px 4px rgba(216, 216, 216, 0.5);
 }
 
-body > section.activites > div > div.actiD > figure.gauche{
-        
-    width: 47%;/*div contenant<figure> de droite*/
-     margin: 0%;
-    margin-right: 6%;
+.hautG{/*div conteneur <figure> du haut partie gauche*/
+    width: 47%;
+    margin: 0%;
+    margin-bottom: 2%;
     background-color: white;
     border-radius: 20px;
     box-shadow: -3px 3px 10px 4px rgba(216, 216, 216, 0.5);
-    }
-    
-.haut{/*div contenant <figure> du haut*/
+}
+
+.basG{/*div conteneur <figure> du bas partie gauche*/
+    width: 47%;
+    margin: 0px;
+    margin-top: 3%;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: -3px 3px 10px 4px rgba(216, 216, 216, 0.5);
+}
+
+.hautD{/*div conteneur <figure> du haut partie droite*/
     width: 47%;
     margin: 0%;
     margin-bottom: 2%;
@@ -422,8 +498,7 @@ body > section.activites > div > div.actiD > figure.gauche{
     box-shadow: -3px 3px 10px 4px rgba(216, 216, 216, 0.5);
 }
     
-.bas{/*div contenant <figure> du bas*/
-        
+.basD{/*div conteneur <figure> du bas partie droite*/
     width: 47%;
     margin: 0px;
     margin-top: 3%;
@@ -431,74 +506,87 @@ body > section.activites > div > div.actiD > figure.gauche{
     border-radius: 20px;
     box-shadow: -3px 3px 10px 4px rgba(216, 216, 216, 0.5);
 }
-    
-body > section.activites > div > div.actiG > figure.gauche > a > img{
-    height: 430px;/*image gauche div actigauche*/
+
+/*---------------------liens prenant toute la surface*/
+.gauche a{
+    width: 100%;
+    height: 100%;
+
+}
+
+.hautG a{
+    width: 100%;
+    height: 100%;
+
+}
+
+.basG a{
+    width: 100%;
+    height: 100%;
+
+}
+
+.hautD a{
+    width: 100%;
+    height: 100%;
+
+}
+
+.basD a{
+    width: 100%;
+    height: 100%;
+
+}
+
+
+div.actiG > div.gauche > a > figure > img{
+    height: 430px;/*image gauche partie gauche*/
     object-fit: cover;
     width: 100%;
     border-top-right-radius: 20px;
     border-top-left-radius: 20px;
 }
-    
-    
-.haut img{/*image du haut actigauche*/
-    object-fit: cover;
+
+.actiG > div.hautG > a > figure > img {
+    object-fit: cover;/*image du haut partie gauche*/
     height: 210px;
     width: 100%;
     border-top-right-radius: 20px;
     border-top-left-radius: 20px;
 }
-    
-.bas img{/*image du bas actigauche*/
-    object-fit: cover;
+
+.actiG > div.basG > figure > img{
+    object-fit: cover;/*image du bas partie gauche*/
     height: 130px;
      width: 100%;
     border-top-right-radius: 20px;
     border-top-left-radius: 20px;
 }
-    
-body > section.activites > div > div.actiD > figure.gauche > a > img{
-    /*image gauche div actiDroite*/
-    height: 430px;
+
+div.actiD > div.gauche > a > figure > img{
+    height: 430px;/*image gauche partiedroite*/
     object-fit: cover;
     width: 100%;
     border-top-right-radius: 20px;
     border-top-left-radius: 20px;
 }
-    
-.hautD{/*conteneur image haut actiDroite*/
-    width: 47%;
-    margin: 0%;
-    margin-bottom: 2%;
-    background-color: white;
-    border-radius: 20px;
-    box-shadow: -3px 3px 10px 4px rgba(216, 216, 216, 0.5);
-}
-    
-.basD{/*conteneur image bas actiDroite*/
-    width: 47%;
-    margin: 0px;
-    margin-top: 3%;
-    background-color: white;
-    border-radius: 20px;
-    box-shadow: -3px 3px 10px 4px rgba(216, 216, 216, 0.5);
-}
-    
-.hautD img{/*image haut div actiDroite*/
-    object-fit: cover;
+
+div.actiD > div.hautD > a > figure > img{
+    object-fit: cover;/*image du haut partie droite*/
     height: 170px;
     width: 100%;
     border-top-right-radius: 20px;
     border-top-left-radius: 20px;
 }
     
-.basD img{/*image bas actiDroite*/
-    object-fit: cover;
+div.actiD > div.basD > a > figure > img{
+    object-fit: cover;/*image du bas partie droite*/
     height: 170px;
     width: 100%;
     border-top-right-radius: 20px;
     border-top-left-radius: 20px;
 }
+
     
 /*-----------------------------------------------------------------footer--------------------------------------------------------------*/
 
@@ -524,6 +612,6 @@ body > footer > ul > li{/*ligne liste footer*/
 }
 
 
-body > footer > ul > li:nth-child(1){
+body > footer > ul > li:nth-child(1){/* police gars premier enfant liste*/
     font-weight: bold;
 }
