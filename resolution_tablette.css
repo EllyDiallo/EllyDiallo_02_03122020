@@ -2,11 +2,11 @@
 
 body{
     font-family: 'Raleway', sans-serif;
-     font-size: 16px;
+     font-size: 12px;
 }
 
 main{
-    width: 96%;
+    width: 99%;
     margin: 0px auto;
 }
 
@@ -140,6 +140,7 @@ input#search::placeholder{/*texte prédéfini*/
 
 .filtres >.ico{/*div conteneur de l'ensemble des filtres*/
     display: flex;
+    flex-wrap: wrap;
     padding: 0%;
 }
 
@@ -250,7 +251,8 @@ section.hebergements > aside > div.popu > h2{
 
 .stp{/*div conteneur icônes stars populaires*/
     display: flex;
-    margin-top: 15%;
+    margin-top: 2%;
+    
 }
 
 p.stb, p.stg{/*paragraphe icônes stars*/
@@ -280,12 +282,13 @@ margin: 0px;/*paragraphe autour étoiles grise*/
 .heberg{/*------------------------div Hébergement à Marseille*/
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
     background-color:rgb(242, 242, 242) ;
-    width: 62.5%;
+    width: 70%;
     height: 100%;
-    padding: 3.5% 1.5%;
+    padding: 1% 1.5%;
     border-radius: 2%;
+    margin-right: 1%;
 }
 
 .h_à_m{/* div conteneur des <figure>*/
@@ -304,7 +307,7 @@ margin: 0px;/*paragraphe autour étoiles grise*/
     border-radius: 20px;
     padding: 5px;
     height: 200px;
-    width: 29.15%;
+    width: auto;
     min-width: 195px;
     box-shadow: -3px 3px 10px 4px rgba(216, 216, 216, 0.5);
 }
@@ -321,32 +324,11 @@ margin: 0px;/*paragraphe autour étoiles grise*/
 
 .figu img{/*image*/
   
-    width: 100%;
+    width: 330px;
     height: 120px;
     object-fit: cover;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
-}
-
-@media all and (min-width: 700px) and (max-width: 1482px){
-    .figu img{/*image*/
-  
-        width: 330px;
-        height: 120px;
-        object-fit: cover;
-        border-top-left-radius: 20px;
-        border-top-right-radius: 20px;
-    }
-    .figureh{/*div contenant chaque <figure>*/
-        margin: 2.5% 1.5% 2% 1.5%;
-        background-color: white;
-        border-radius: 20px;
-        padding: 5px;
-        height: 200px;
-        width: auto;
-        min-width: 195px;
-        box-shadow: -3px 3px 10px 4px rgba(216, 216, 216, 0.5);
-    }
 }
 
 .figh{/*figcaption hébergement*/
@@ -364,11 +346,11 @@ margin: 0px;/*paragraphe autour étoiles grise*/
 /*--------------------------------aside"Les plus populaires"-*/
 .pop{/*div "les plus populaires"*/
     background-color:rgb(242, 242, 242) ;
-    width: 27.1%;
+    width: 23%;
     height: 100%;
-    padding: 3.5% 1.5% 1.5% 1.5%;
+    padding: 1% 1.5% 1.5% 1%;
     border-radius: 2%;
-    margin-left: 0%;
+    margin-left: 2%;
 }
 
 .popu{/*conteneur titre + icône schéma*/
@@ -396,9 +378,9 @@ div.popu > p > i{
 .figurep{/*div contenant chaque figure*/
     background-color: white;
     border-radius: 20px;
-    margin: 4% 1.1% 3.5% 1%;
+    margin: 2% 1.1% 2% 1%;
     padding: 5px;
-    height: 150px;
+    height: 100%;
     width: 100%;
     box-shadow: -3px 3px 10px 4px rgba(216, 216, 216, 0.5);
 }
@@ -410,29 +392,33 @@ div.popu > p > i{
 
 .figup{ /*<figure> populaire*/
     display: flex;
+    flex-direction: column;
     margin: 0px;
+
 }
 
 .figup img{
   
-    width: 40%;
-    height: 148px;
-    max-height: 148px;
+    width: 100%;
+    height: 250px;
+    max-width: 300px;
     object-fit: cover;
     border-top-left-radius: 20px;
-    border-bottom-left-radius: 20px;
+    border-top-right-radius: 20px;
 }
 
 .figp{/*<figcaption> populaire*/
     display: flex;
     flex-direction: column;
-    margin: 5px 5px 0px 5px;
-    width: 60%;
-    height: 100%;
+    margin: 2px 2px 2px 2px;
+    width: 100%;
+    height: 40%;
+    align-items: center;
+    text-align: center;
 }
 
 .figp p{
-    margin: 3% 3% 3% 3%;
+    margin: 1% 1% 1% 1%;
 }
 
 div.l_p_p > div:nth-child(-n+3) > a > figure > figcaption > div > p.stb{
