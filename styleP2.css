@@ -8,6 +8,7 @@ body{
 main{
     width: 96%;
     margin: 0px auto;
+    
 }
 
 h1{
@@ -47,10 +48,13 @@ a:link{
 header{
     justify-content: space-between;
     display: flex;
+    height: 120px;
+    align-items: center;
 }
 /*-------------------------------menu*/
 nav.menu{
     width: 33%;
+    height: 100%;
 }
 
 nav.menu ul{
@@ -58,22 +62,50 @@ nav.menu ul{
     justify-content: space-around;
     text-align: center;
     padding: 0%;
+    height: 100%;
+    align-items: center;
+    margin: 0px;
 }
+
 /* 3 différents éléments nav*/
+
 
 #heb > a{
     color: #0065FC ;
     font-weight: 500;
+    height: 100%;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+#heb  :hover{
+    border-top: 3px solid #0065FC;
 }
 
 #ac > a{
     font-weight: 600;
+    height: 100%;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+
+#ac  :hover{
+    border-top: 3px solid black;
 }
 
 #ins > a{
     color: #0065FC ;
     font-weight: bolder;
+    height: 100%;
+    padding-top: 40px;
+    padding-bottom: 40px;
 }
+
+#ins  :hover{
+    border-top: 3px solid #0065FC;
+}
+
 /*----------------------------------------------------section "Trouvez votre hébergement"-----------------------------------------*/
 
 .trouv h1{
