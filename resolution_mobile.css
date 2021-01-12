@@ -2,13 +2,11 @@
 
 body{
     font-family: 'Raleway', sans-serif;
-     font-size: 16px;
+     font-size: 24px;
 }
 
 main{
-    width: 96%;
-    margin: 0px auto;
-    
+    width: 100%;   
 }
 
 h1{
@@ -46,70 +44,103 @@ a:link{
 /*---------------------------------------------------------------header--------------------------------------------------------------------------*/
 
 header{
-    justify-content: space-between;
-    display: flex;
-    height: 120px;
+    height: auto;
     align-items: center;
+}
+
+/*--------------------------------logo*/
+
+.logo{
+position: absolute;
+padding-left: 25px;
 }
 /*-------------------------------menu*/
 nav.menu{
-    width: 33%;
+
+    position: relative;
+    float: left;
+    width: 150%;
     height: 100%;
 }
 
 nav.menu ul{
     display: flex;
-    justify-content: space-around;
+    flex-wrap: wrap;
+   /* justify-content: space-between;*/
     text-align: center;
     padding: 0%;
-    height: 100%;
-    align-items: center;
+    height: 102px;
+    /*align-items: center;*/
     margin: 0px;
 }
 
 /* 3 différents éléments nav*/
 
+#heb{
+    width: 50%;
+    justify-content: center;
+    border-bottom: 3px solid  #F2F2F2;
+}
+
+#ac{
+    width: 50%;
+    justify-content: center;
+    border-bottom: 3px solid  #F2F2F2;
+}
+
+#ins{
+    order: -2;
+    width: 98%;
+    justify-content: flex-end
+}
 
 #heb > a{
     color: #0065FC ;
     font-weight: 500;
     height: 100%;
-    padding-top: 40px;
-    padding-bottom: 40px;
-}
-
-#heb:hover{
-    border-top: 3px solid #0065FC;
+    padding-top: 25px;
+    padding-bottom: 5px;
 }
 
 #ac > a{
     font-weight: 600;
     height: 100%;
-    padding-top: 40px;
-    padding-bottom: 40px;
-}
-
-
-#ac:hover{
-    border-top: 3px solid black;
+    padding-top:25px;
+    padding-bottom: 5px;   
 }
 
 #ins > a{
     color: #0065FC ;
     font-weight: bolder;
     height: 100%;
-    padding-top: 40px;
-    padding-bottom: 40px;
+    padding-bottom: 0px;
 }
 
-#ins:hover{
-    border-top: 3px solid #0065FC;
+#heb:hover{
+    border-bottom: 3px solid #0065FC;
+    border-top: none;
 }
+
+#ac:hover{
+    border-bottom: 3px solid  #0065FC;
+    border-top: none;
+}
+
+
+
 
 /*----------------------------------------------------section "Trouvez votre hébergement"-----------------------------------------*/
+.trouv{
+    padding: 4%;
+}
 
 .trouv h1{
+    font-size: 30px;
     margin-bottom: 0%;
+    margin-right: 20%;
+    padding-top: 3%;
+    text-align: center;
+    
 }
 /*------------------------------------------------formulaire*/
 .formu{
@@ -172,8 +203,10 @@ input#search::placeholder{/*texte prédéfini*/
 
 .filtres >.ico{/*div conteneur de l'ensemble des filtres*/
     display: flex;
+    flex-wrap: wrap;
     padding: 0%;
 }
+
 
 .filtres > .ico > .ic{/*div conteneur filtre*/
     font-weight: bold;
@@ -227,6 +260,9 @@ input#search::placeholder{/*texte prédéfini*/
     width: 20px;
     height: 20px;
 }
+body > main > section.trouv > div.filtres > ul > li:nth-child(3){
+    margin-right: 50%;
+}
 /*--------------------------------------------div information*/
 .info{ /*div "plus de 500 logements"*/
     display: flex;
@@ -249,7 +285,7 @@ p.infopara { /*paragraphe d'information*/
 /*-----------------------------------------------------section-centrale"Hébergement"------------------------------------------------*/
 .hebergements{/*section hébergement*/
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
     height: auto;
     width: auto;
 }
@@ -479,6 +515,7 @@ div.l_p_p > div:nth-child(-n+3) > a > figure > figcaption > div > p.stg{
 
 section .activites{/*section activitées*/
     display: flex;
+    flex-direction: column;
 }
 
 .actifig{/*figcaption section activitées*/
@@ -492,7 +529,8 @@ section.hebergements > div > p{
 
 .acti{/*div contenant actiGauche + actiDroite*/
         display: flex;
-        height: 500px;
+        flex-direction: column;
+        height: auto;
         justify-content: space-between;
         
 }
@@ -645,6 +683,7 @@ div.actiD > div.basD > a > figure > img{
 
 footer{
     display: flex;
+    flex-direction: column;
     background-color: rgb(242, 242, 242) ;
     padding: 1rem;
     margin-top: 3rem;
