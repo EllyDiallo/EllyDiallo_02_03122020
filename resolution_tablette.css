@@ -1,416 +1,99 @@
 /*-----------------------------------------------------------Général-------------------------------------------------------------------*/
 
 body{
-    font-family: 'Raleway', sans-serif;
-     font-size: 12px;
+    font-size: 12px;
 }
 
 main{
     width: 99%;
-    margin: 0px auto;
 }
-
-h1{
-    font-size: 1.5rem;
-    font-weight: bolder;
-}
-h2{
-    font-size: 1.5rem;
-    font-weight: bolder;
-}
-
-p {
-    font-size: 1rem;
-}
-
-figure{
-    display: inline-block;
-    margin-block-start: 0em;
-    margin-block-end: 0em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-}
-
-li {
-    list-style: none;
-    display: flex;
-}
-
-a:link{
-    text-decoration: none;
-    color: black;
-}
-
 
 /*---------------------------------------------------------------header--------------------------------------------------------------------------*/
 
-header{
-    justify-content: space-between;
-    display: flex;
-}
+
+
+/*-------------------------------logo*/
+
 /*-------------------------------menu*/
+
 nav.menu{
     width: 33%;
 }
 
-nav.menu ul{
-    display: flex;
-    justify-content: space-around;
-    text-align: center;
-    padding: 0%;
-}
-/* 3 différents éléments nav*/
-
-#heb > a{
-    color: #0065FC ;
-    font-weight: 500;
-}
-
-#ac > a{
-    font-weight: 600;
-}
-
-#ins > a{
-    color: #0065FC ;
-    font-weight: bolder;
-}
 /*----------------------------------------------------section "Trouvez votre hébergement"-----------------------------------------*/
 
-.trouv h1{
-    margin-bottom: 0%;
-}
+
 /*------------------------------------------------formulaire*/
-.formu{
-    display: inline-flex;
-    border: 1px solid #F2F2F2;
-    width:auto;
-    height: auto;
-    border-radius: 15px;
-}
-
-span.loc{     /*icône de localisation*/
-    border: 1px solid #F2F2F2;
-    border-top-left-radius:15px;
-    border-bottom-left-radius:15px;
-    background-color:  #F2F2F3;
-}
-
-section.trouv > div.formu > span > i{/*span icône localisation*/
-    font-size: 16px;
-    width: 3rem;
-    height: 2.1rem;
-    text-align: center;
-    margin-top: 0.8rem;
-}
-
-input[type="submit"]{/*bouton*/
-    cursor:pointer;
-    color: white ;
-    font-weight: bolder;
-    background-color:  #0065FC;
-    padding: 1rem;
-    border-top-right-radius: 15px;
-    border-bottom-right-radius: 15px;
-    border: none;
-    font-size: 1rem;
-}
-
-input#search{/*zone de recherche*/
-        border: none;
-        padding: 1rem;
-        padding-right: 2rem;
-        font-size: 1rem;
-        font-weight: bold;
-}
-
-input#search::placeholder{/*texte prédéfini*/
-    color: black;
-    font-weight: bolder;
-}
 
 /*-----------------------------------------div des filtres*/
-.filtres{
-    display: flex;
-}
-
-.filtres > p{
-    padding-top: 1rem;
-    margin-right: 1rem;
-}
 
 .filtres >.ico{/*div conteneur de l'ensemble des filtres*/
-    display: flex;
     flex-wrap: wrap;
-    padding: 0%;
 }
 
-.filtres > .ico > .ic{/*div conteneur filtre*/
-    font-weight: bold;
-    box-sizing: border-box;
-    border-radius: 40px;
-    height: 56px;
-    border: 3px solid #F2F2F2 ;
-    margin-right: 1rem;
-
-}
-
-.filtres > .ico > .ic:hover{/*div conteneur filtre au survol*/
-    font-weight: bold;
-    box-sizing: border-box;
-    border-radius: 40px;
-    height: 60px;
-    border: 4px groove #dddada;
-    margin-right: 1rem;
-    background-color: rgb(215, 248, 215);
-    box-shadow: 3px -3px 4px rgba(75, 15, 15, 0.5);
-    
-}
-
-.filtres >.ico > .ic > p {/*paragraphe autour du filtre*/
-    padding: 1rem;
-    margin: 0%;
-}
-
-    .filtres > .ico > .ic > .fas{/*icônes filtres*/
-    position: relative;
-    top: 0px;
-    left: 0px;
-    color: #0065FC;
-    background-color: #DEEBFF;
-    text-align: center;
-    padding: 1rem;
-    border-radius: 50%;
-    width: 20px;
-    height: 20px;
-}
-
-.filtres > .ico > .ic > .fas:hover{/*icônes filtres au survol*/
-    position: relative;
-    top: 0px;
-    left: 0px;
-    color:   #dd7fd5;
-    background-color:rgb(215, 248, 215);
-    text-align: center;
-    padding: 1rem;
-    border-radius: 50%;
-    width: 20px;
-    height: 20px;
-}
 /*--------------------------------------------div information*/
-.info{ /*div "plus de 500 logements"*/
-    display: flex;
-} 
-
-.fa-info::before {    /* icône d'information*/
-    color:  #0065FC;;
-    border: 2px solid #F2F2F2; 
-    background-color:  white;
-    border-radius: 50%;
-    padding: 0.2rem;
-    padding-left: 0.6rem;
-    padding-right: 00.6rem;
-}
-
-p.infopara { /*paragraphe d'information*/
-    padding-left: 10px;
-}
 
 /*-----------------------------------------------------section-centrale"Hébergement"------------------------------------------------*/
-.hebergements{/*section hébergement*/
-    display: flex;
-    justify-content: space-between;
-    height: auto;
-    width: auto;
-}
-
-.heberg h2{/*titres hébergement*/
-    padding-left: 2.6%;
-    margin: 0px;
-}
-
-section.hebergements > aside > div.popu > h2{
-    padding-left: 7%;/*titres populaires*/
-    margin: 0px;
-}
-
-.nomlieu{
-    font-size: 1.1rem;
-    font-weight: bolder;
-}
-
-
-.prix{
-    font-weight: bold;
-}
-
-.st{/*div conteneur icônes stars hébergement*/
-    padding-left: 4px;
-    padding-bottom: 4px;
-    display: inline-block;
-}
-
-.stp{/*div conteneur icônes stars populaires*/
-    display: flex;
-    margin-top: 2%;
-    
-}
-
-p.stb, p.stg{/*paragraphe icônes stars*/
-    display: inline-block;
-    margin-right: 0px;
-}
-
-p.stg{/*paragraphe icône stars grises*/
-    margin-left: 0px;
-}
-p.stg .fas{/*icône stars grise*/
-    color:rgb(218, 218, 218) ;
-}
-
-p.stb .fas{/*icône stars bleues*/
-    color:#0065FC ;
-}
-
-section.hebergements > div > div > div:nth-child(-n+6) > a > figure > figcaption > div > p.stb{
-    margin: 0px;/*paragraphe autour étoiles bleues*/
-}
-
-section.hebergements > div > div > div:nth-child(-n+6) > a > figure > figcaption > div > p.stg{
-margin: 0px;/*paragraphe autour étoiles grise*/
-}
 
 .heberg{/*------------------------div Hébergement à Marseille*/
-    display: flex;
-    flex-direction: column;
     justify-content: center;
-    background-color:rgb(242, 242, 242) ;
-    width: 70%;
-    height: 100%;
+    width: 53%;
     padding: 1% 1.5%;
     border-radius: 2%;
     margin-right: 1%;
 }
 
 .h_à_m{/* div conteneur des <figure>*/
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    height: auto;
-    width: auto;
-    margin: 0.8rem;
-    margin-top: 0px;
+    justify-content: center;
 }
 
 .figureh{/*div contenant chaque <figure>*/
-    margin: 2.5% 1.5% 2% 1.5%;
-    background-color: white;
-    border-radius: 20px;
-    padding: 5px;
-    height: 200px;
     width: auto;
-    min-width: 195px;
-    box-shadow: -3px 3px 10px 4px rgba(216, 216, 216, 0.5);
-}
-
-.figureh a{ 
-    width: 100%;
-    height: 100%;
-}.figu{
-    width: 100%;
-    margin: 0%;
-    height: auto;
 }
 
 
 .figu img{/*image*/
   
-    width: 330px;
-    height: 120px;
-    object-fit: cover;
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
+    width: 380px;
 }
-
 .figh{/*figcaption hébergement*/
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    padding-left: 10px;
+    align-items: center;
 }
 
-.figh p{
-    margin: 5px 5px 0px 5px;
-}
 
 
 /*--------------------------------aside"Les plus populaires"-*/
 .pop{/*div "les plus populaires"*/
-    background-color:rgb(242, 242, 242) ;
-    width: 23%;
+    width: 40%;
     height: 100%;
     padding: 1% 1.5% 1.5% 1%;
-    border-radius: 2%;
     margin-left: 2%;
 }
 
-.popu{/*conteneur titre + icône schéma*/
-    display: flex;
-    
-}
-
 div.popu > p{
-    margin-top: 0px;/*paragraphe contenant l'icône shéma*/
+    /*paragraphe contenant l'icône shéma*/
     margin-left: 20%;
 }
 
-div.popu > p > i{
-    font-size: 1.5rem;/*icône shéma*/
-}
-
-
-.l_p_p{/*conteneur <figure>*/
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 0.8rem;
-    margin-top: 0px;
-}
 
 .figurep{/*div contenant chaque figure*/
-    background-color: white;
-    border-radius: 20px;
     margin: 2% 1.1% 2% 1%;
-    padding: 5px;
     height: 100%;
     width: 100%;
-    box-shadow: -3px 3px 10px 4px rgba(216, 216, 216, 0.5);
-}
-
-.figurep a{
-    width: 100%;
-    height: 100%;
 }
 
 .figup{ /*<figure> populaire*/
-    display: flex;
     flex-direction: column;
-    margin: 0px;
-
+   width: auto;
+    height: auto;
 }
 
 .figup img{
-  
-    width: 100%;
+    width: auto;
     height: 250px;
-    max-width: 300px;
-    object-fit: cover;
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
 }
 
 .figp{/*<figcaption> populaire*/
-    display: flex;
-    flex-direction: column;
     margin: 2px 2px 2px 2px;
     width: 100%;
     height: 40%;
@@ -422,204 +105,6 @@ div.popu > p > i{
     margin: 1% 1% 1% 1%;
 }
 
-div.l_p_p > div:nth-child(-n+3) > a > figure > figcaption > div > p.stb{
-    margin: 0px;/* paragraphe autour étoile bleues*/
-}
-div.l_p_p > div:nth-child(-n+3) > a > figure > figcaption > div > p.stg{
-    margin: 0px;/*paragraphe autoour étoiles grises*/
-}
-
-
 /*-----------------------------------------------------------section"activitée"--------------------------------------------------------*/
 
-section .activites{/*section activitées*/
-    display: flex;
-}
-
-.actifig{/*figcaption section activitées*/
-    padding: 1rem;
-    font-weight: bolder;
-}
-
-section.hebergements > div > p{
-    font-weight: bold;
-}
-
-.acti{/*div contenant actiGauche + actiDroite*/
-        display: flex;
-        height: 500px;
-        justify-content: space-between;
-        
-}
-
-.actiG{/*div Gauche*/
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    width: 48%;
-    background-color: white;
-    height: auto;
- }
-    
- .actiD{/*div Droite*/
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    width: 48%;
-    background-color: white;
-    height: auto;
-    }
-    
-.gauche{/*div conteneur <figure> de gauche*/
-    width: 47%;
-    margin: 0%;
-    margin-right: 6%;
-    background-color: white;
-    border-radius: 20px;
-    box-shadow: -3px 3px 10px 4px rgba(216, 216, 216, 0.5);
-}
-
-.hautG{/*div conteneur <figure> du haut partie gauche*/
-    width: 47%;
-    margin: 0%;
-    margin-bottom: 2%;
-    background-color: white;
-    border-radius: 20px;
-    box-shadow: -3px 3px 10px 4px rgba(216, 216, 216, 0.5);
-}
-
-.basG{/*div conteneur <figure> du bas partie gauche*/
-    width: 47%;
-    margin: 0px;
-    margin-top: 3%;
-    background-color: white;
-    border-radius: 20px;
-    box-shadow: -3px 3px 10px 4px rgba(216, 216, 216, 0.5);
-}
-
-.hautD{/*div conteneur <figure> du haut partie droite*/
-    width: 47%;
-    margin: 0%;
-    margin-bottom: 2%;
-    background-color: white;
-    border-radius: 20px;
-    box-shadow: -3px 3px 10px 4px rgba(216, 216, 216, 0.5);
-}
-    
-.basD{/*div conteneur <figure> du bas partie droite*/
-    width: 47%;
-    margin: 0px;
-    margin-top: 3%;
-    background-color: white;
-    border-radius: 20px;
-    box-shadow: -3px 3px 10px 4px rgba(216, 216, 216, 0.5);
-}
-
-/*---------------------liens prenant toute la surface*/
-.gauche a{
-    width: 100%;
-    height: 100%;
-
-}
-
-.hautG a{
-    width: 100%;
-    height: 100%;
-
-}
-
-.basG a{
-    width: 100%;
-    height: 100%;
-
-}
-
-.hautD a{
-    width: 100%;
-    height: 100%;
-
-}
-
-.basD a{
-    width: 100%;
-    height: 100%;
-
-}
-
-
-div.actiG > div.gauche > a > figure > img{
-    height: 430px;/*image gauche partie gauche*/
-    object-fit: cover;
-    width: 100%;
-    border-top-right-radius: 20px;
-    border-top-left-radius: 20px;
-}
-
-.actiG > div.hautG > a > figure > img {
-    object-fit: cover;/*image du haut partie gauche*/
-    height: 210px;
-    width: 100%;
-    border-top-right-radius: 20px;
-    border-top-left-radius: 20px;
-}
-
-.actiG > div.basG > figure > img{
-    object-fit: cover;/*image du bas partie gauche*/
-    height: 130px;
-     width: 100%;
-    border-top-right-radius: 20px;
-    border-top-left-radius: 20px;
-}
-
-div.actiD > div.gauche > a > figure > img{
-    height: 430px;/*image gauche partiedroite*/
-    object-fit: cover;
-    width: 100%;
-    border-top-right-radius: 20px;
-    border-top-left-radius: 20px;
-}
-
-div.actiD > div.hautD > a > figure > img{
-    object-fit: cover;/*image du haut partie droite*/
-    height: 170px;
-    width: 100%;
-    border-top-right-radius: 20px;
-    border-top-left-radius: 20px;
-}
-    
-div.actiD > div.basD > a > figure > img{
-    object-fit: cover;/*image du bas partie droite*/
-    height: 170px;
-    width: 100%;
-    border-top-right-radius: 20px;
-    border-top-left-radius: 20px;
-}
-
-    
 /*-----------------------------------------------------------------footer--------------------------------------------------------------*/
-
-footer{
-    display: flex;
-    background-color: rgb(242, 242, 242) ;
-    padding: 1rem;
-    margin-top: 3rem;
-}
-
-body > footer > ul{/*Liste footer*/
-    padding-left: 0%;
-    margin-top: 2rem;
-    margin-right: 13rem;
-    margin-bottom: 0%;
-    margin-left: 2rem;
-}
-
-body > footer > ul > li{/*ligne liste footer*/
-    margin-top: 1rem;
-    margin-bottom:0%;
-    font-weight: 500;
-}
-
-
-body > footer > ul > li:nth-child(1){/* police gars premier enfant liste*/
-    font-weight: bold;
-}

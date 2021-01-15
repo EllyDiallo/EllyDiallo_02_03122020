@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styleP2.css">
-    <link rel="stylesheet" media="all and (min-width: 700px) and (max-width: 1300px)" href="resolution_tablette.css" />
-    <link rel="stylesheet" media="all and (max-width: 699px)" href="resolution_mobile.css" />
+    <link rel="stylesheet" media="all and (min-widht: 848px)  and (max-width: 1300px)" href="resolution_tablette.css" />
+    <link rel="stylesheet" media="all and (max-width: 847px)" href="resolution_mobile.css" />
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
     <title>Réservia</title>
@@ -23,9 +23,9 @@
                 <ul>
                     <li id="heb"><a href="#heb-ancre"> Hébergements</a></li>
                     <li id="ac"><a href="#ac-ancre">Activités</a></li>
-                    <li id="ins"><a href="#ins-ancre">S'inscrire</a></li>
                 </ul>
             </nav>
+            <P id="ins">S'inscrire</P>
         </header>
         
         
@@ -37,9 +37,19 @@
             
             <div class="formu">
                 <span class="loc"><i class="fas fa-map-marker-alt"></i></span>
-                <form action="toto.php" method="post">
+                <form action="reservia.php" method="post">
                     <label for="search"></label><input type="search" name="search" id="search" maxlength="8" placeholder="Marseille, France" >
-                    <input type="submit" value="Rechercher">
+                   
+                    <button class="text"type="button" name="text">
+                        Rechercher
+                   </button>
+                    
+                    <button class="loupe" type="button" name="loupe">
+                      <i class="fas fa-search" class="button-loupe"></i>
+                    </button>
+            <!--    <div class="button-go">
+                        <i class="fas fa-search"></i>
+                    </div>-->
                 </form>
             </div>
                 
@@ -253,7 +263,7 @@
                     </div>
 
                     <div class="basG">
-                        <a href="images/activites/1_xlarge/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg"></a>
+                        <a href="images/activites/1_xlarge/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg">
                             <figure class="img-bas">
                                 <img src="images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" alt="Îles du Frioul">
                                 <figcaption class="actifig">Îles du Frioul</figcaption>

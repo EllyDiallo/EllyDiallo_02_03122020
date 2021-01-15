@@ -43,39 +43,55 @@ a:link{
 }
 
 
+
 /*---------------------------------------------------------------header--------------------------------------------------------------------------*/
 
 header{
-    justify-content: space-between;
+    justify-content: flex-end;
     display: flex;
     height: 120px;
     align-items: center;
 }
+/*-------------------------------logo*/
+div.logo {
+    width: 70%;
+}
+
 /*-------------------------------menu*/
 nav.menu{
-    width: 33%;
+    width: 25%;
     height: 100%;
 }
 
 nav.menu ul{
     display: flex;
-    justify-content: space-around;
-    text-align: center;
+    justify-content: center;
     padding: 0%;
     height: 100%;
     align-items: center;
     margin: 0px;
+    width: 100%;
 }
 
-/* 3 différents éléments nav*/
+/* 2 éléments nav*/
 
+#heb{
+    width: 50%;
+    justify-content: center;
+}
 
+#ac{
+    width: 50%;
+    justify-content: center;
+}
 #heb > a{
     color: #0065FC ;
     font-weight: 500;
     height: 100%;
     padding-top: 40px;
     padding-bottom: 40px;
+    width: 100%;
+    text-align: center;
 }
 
 #heb:hover{
@@ -87,6 +103,8 @@ nav.menu ul{
     height: 100%;
     padding-top: 40px;
     padding-bottom: 40px;
+    width: 100%;
+    text-align: center;
 }
 
 
@@ -94,17 +112,20 @@ nav.menu ul{
     border-top: 3px solid black;
 }
 
-#ins > a{
+
+p#ins{
+    display: inline-block;
     color: #0065FC ;
+    width: 6.25%;
     font-weight: bolder;
-    height: 100%;
-    padding-top: 40px;
-    padding-bottom: 40px;
+    padding-top: 3%;
+    padding-bottom: 2.189%;
+    text-align: end;
+    margin: 0%;
+    height: 22%;
+
 }
 
-#ins:hover{
-    border-top: 3px solid #0065FC;
-}
 
 /*----------------------------------------------------section "Trouvez votre hébergement"-----------------------------------------*/
 
@@ -115,7 +136,7 @@ nav.menu ul{
 .formu{
     display: inline-flex;
     border: 1px solid #F2F2F2;
-    width:auto;
+    width: auto;
     height: auto;
     border-radius: 15px;
 }
@@ -135,8 +156,20 @@ section.trouv > div.formu > span > i{/*span icône localisation*/
     margin-top: 0.8rem;
 }
 
-input[type="submit"]{/*bouton*/
-    cursor:pointer;
+/*.button-go::after{
+    content: "Rechercher";
+    position: relative;
+    left: 70%;
+    top: 50%;
+    color: #0065FC;
+    font-weight: bold;
+}
+.button-go i{
+    visibility: hidden;
+}*/
+
+
+button.text{cursor:pointer;
     color: white ;
     font-weight: bolder;
     background-color:  #0065FC;
@@ -146,6 +179,22 @@ input[type="submit"]{/*bouton*/
     border: none;
     font-size: 1rem;
 }
+button.loupe{    
+    color: white;
+    background-color:#0065FC ;
+    text-align: center;
+    padding: 1.2rem;
+    border-radius: 30%;
+    height: 100%;
+    border: none;
+}
+
+@media all and (min-width: 847px){
+  button.loupe{  display: none;
+}
+}
+
+
 
 input#search{/*zone de recherche*/
         border: none;
@@ -153,6 +202,7 @@ input#search{/*zone de recherche*/
         padding-right: 2rem;
         font-size: 1rem;
         font-weight: bold;
+
 }
 
 input#search::placeholder{/*texte prédéfini*/
@@ -277,12 +327,13 @@ section.hebergements > aside > div.popu > h2{
 .st{/*div conteneur icônes stars hébergement*/
     padding-left: 4px;
     padding-bottom: 4px;
-    display: inline-block;
+    display: flex;
 }
 
 .stp{/*div conteneur icônes stars populaires*/
     display: flex;
-    margin-top: 15%;
+    padding: 0% 0% 1% 2%;
+
 }
 
 p.stb, p.stg{/*paragraphe icônes stars*/
@@ -344,7 +395,8 @@ margin: 0px;/*paragraphe autour étoiles grise*/
 .figureh a{ 
     width: 100%;
     height: 100%;
-}.figu{
+}
+.figu{
     width: 100%;
     margin: 0%;
     height: auto;
@@ -358,27 +410,6 @@ margin: 0px;/*paragraphe autour étoiles grise*/
     object-fit: cover;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
-}
-
-@media all and (min-width: 700px) and (max-width: 1482px){
-    .figu img{/*image*/
-  
-        width: 330px;
-        height: 120px;
-        object-fit: cover;
-        border-top-left-radius: 20px;
-        border-top-right-radius: 20px;
-    }
-    .figureh{/*div contenant chaque <figure>*/
-        margin: 2.5% 1.5% 2% 1.5%;
-        background-color: white;
-        border-radius: 20px;
-        padding: 5px;
-        height: 200px;
-        width: auto;
-        min-width: 195px;
-        box-shadow: -3px 3px 10px 4px rgba(216, 216, 216, 0.5);
-    }
 }
 
 .figh{/*figcaption hébergement*/
@@ -437,12 +468,13 @@ div.popu > p > i{
 
 .figurep a{
     width: 100%;
-    height: 100%;
+    height: auto;
 }
 
 .figup{ /*<figure> populaire*/
     display: flex;
     margin: 0px;
+    height: 100%;
 }
 
 .figup img{
@@ -458,13 +490,17 @@ div.popu > p > i{
 .figp{/*<figcaption> populaire*/
     display: flex;
     flex-direction: column;
-    margin: 5px 5px 0px 5px;
+    justify-content: space-between;
+    margin: 2%;
     width: 60%;
-    height: 100%;
 }
 
 .figp p{
-    margin: 3% 3% 3% 3%;
+    margin: 0% 3% 0% 3%;
+}
+
+div.l_p_p > div:nth-child(-n+3) > a > figure > figcaption > p:nth-child(2){
+    margin-bottom: 15%;
 }
 
 div.l_p_p > div:nth-child(-n+3) > a > figure > figcaption > div > p.stb{
@@ -608,7 +644,11 @@ div.actiG > div.gauche > a > figure > img{
     border-top-left-radius: 20px;
 }
 
-.actiG > div.basG > figure > img{
+.actiG > div.hautG > a > figure{
+    width: 100%;
+}
+
+.actiG > div.basG > a > figure > img{
     object-fit: cover;/*image du bas partie gauche*/
     height: 130px;
      width: 100%;
@@ -667,4 +707,30 @@ body > footer > ul > li{/*ligne liste footer*/
 
 body > footer > ul > li:nth-child(1){/* police gars premier enfant liste*/
     font-weight: bold;
+}
+
+
+
+
+@media all and (min-width: 847px) and (max-width: 1482px){
+    .figu img{/*image*/
+  
+        width: 330px;
+        height: 120px;
+        object-fit: cover;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+    }
+    .figureh{/*div contenant chaque <figure>*/
+        margin: 2.5% 1.5% 2% 1.5%;
+        background-color: white;
+        border-radius: 20px;
+        padding: 5px;
+        height: 200px;
+        width: auto;
+        min-width: 195px;
+        box-shadow: -3px 3px 10px 4px rgba(216, 216, 216, 0.5);
+    }
+
+
 }
