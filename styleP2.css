@@ -155,20 +155,6 @@ section.trouv > div.formu > span > i{/*span icône localisation*/
     text-align: center;
     margin-top: 0.8rem;
 }
-
-/*.button-go::after{
-    content: "Rechercher";
-    position: relative;
-    left: 70%;
-    top: 50%;
-    color: #0065FC;
-    font-weight: bold;
-}
-.button-go i{
-    visibility: hidden;
-}*/
-
-
 button.text{cursor:pointer;
     color: white ;
     font-weight: bolder;
@@ -189,7 +175,7 @@ button.loupe{
     border: none;
 }
 
-@media all and (min-width: 847px){
+@media all and (min-width: 769px){
   button.loupe{  display: none;
 }
 }
@@ -386,7 +372,7 @@ margin: 0px;/*paragraphe autour étoiles grise*/
     background-color: white;
     border-radius: 20px;
     padding: 5px;
-    height: 200px;
+    height: auto;
     width: 29.15%;
     min-width: 195px;
     box-shadow: -3px 3px 10px 4px rgba(216, 216, 216, 0.5);
@@ -710,9 +696,7 @@ body > footer > ul > li:nth-child(1){/* police gars premier enfant liste*/
 }
 
 
-
-
-@media all and (min-width: 847px) and (max-width: 1482px){
+@media all and (min-width: 1265px)  and (max-width: 1465px){
     .figu img{/*image*/
   
         width: 330px;
@@ -726,11 +710,13 @@ body > footer > ul > li:nth-child(1){/* police gars premier enfant liste*/
         background-color: white;
         border-radius: 20px;
         padding: 5px;
-        height: 200px;
         width: auto;
-        min-width: 195px;
+        min-width: 190px;
         box-shadow: -3px 3px 10px 4px rgba(216, 216, 216, 0.5);
     }
 
 
 }
+
+
+
