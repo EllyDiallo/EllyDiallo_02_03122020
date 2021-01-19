@@ -13,7 +13,6 @@ main{
 header{
     justify-content: flex-end;
     display: flex;
-    height: 120px;
     align-items: center;
     flex-wrap: wrap;
 }
@@ -35,10 +34,22 @@ nav.menu{
 
 #heb{
     border-bottom: 3px solid  #F2F2F2;
+    padding: 40px 0px 40px 0px;
 }
 
 #ac{
     border-bottom: 3px solid  #F2F2F2;
+    padding: 40px 0px 40px 0px;
+}
+
+
+#ac > a{
+    padding-bottom: 0px;
+    padding-top: 0px;
+}
+
+#heb > a{
+    padding: 0px;
 }
 
 #heb:hover{
@@ -60,29 +71,53 @@ p#ins{
 /*----------------------------------------------------section "Trouvez votre hébergement"-----------------------------------------*/
 .trouv{
     padding: 4%;
+    height: auto;
 }
 
 .trouv h1{
-    font-size: 30px;
+    font-size: 1.1rem;
     margin-bottom: 0%;
     margin-right: 20%;
-    padding-top: 3%;
-    text-align: center;
-    
+    text-align: justify;
+}
+
+main > section.trouv > p{
+    font-size: 0.95rem;
 }
 /*------------------------------------------------formulaire*/
-.formu{
-    width:100%;
-    justify-content: center;
+.formu{/*section conteneur formulaire*/
+    width: 100%;
+    justify-content: space-between;
+    height: auto;
+
+}
+
+span.loc{/* span icône localisation*/
+    width: 3.6rem;
+    
+}
+div.formu > form{/*div formulaire*/
+    display: flex;
+    width: auto;
+    justify-content: space-between;
+}
+input#search{/*zone de recherche*/
+    padding: 00.8rem 0rem 0.8rem 0.8rem;
+    width: auto;
+    min-width: 150px;
+    font-size: 0.8rem;
+    
+}
+
+button.loupe{
+    width: 3.6rem;
 }
 button.text{
     display: none;
 }
 
-body > main > section.trouv > div.formu > form{
-
+section.trouv > div.formu > form{
     width: 100%;
-
 }
 
 /*input#search{
@@ -104,7 +139,7 @@ body > main > section.trouv > div.formu > form{
     margin-top: 0%;
 }
 
-body > main > section.trouv > div.filtres > ul > li:nth-child(3){
+section.trouv > div.filtres > ul > li:nth-child(3){
     margin-right: 50%;
 }
 /*--------------------------------------------div information*/
@@ -112,54 +147,247 @@ body > main > section.trouv > div.filtres > ul > li:nth-child(3){
 /*-----------------------------------------------------section-centrale"Hébergement"------------------------------------------------*/
 .hebergements{/*section hébergement*/
     flex-direction: column;
+    width: 100%;
 }
 
-.stp{/*div conteneur icônes stars populaires*/
-    margin-top: 15%;
-}
+/*div conteneur icônes stars populaires*/
+    
+
 
 .heberg{/*------------------------div Hébergement à Marseille*/
     width: 100%;
+    border-radius: 0px;
+    background-color: white;
 }
+
+.h_à_m{/*div conteneur figures hebergement*/
+    padding: 4%;
+    margin: 0px;
+}
+
+.figureh{/*figures hébergement*/
+    width: 100%;
+    margin: 0.8rem 0rem 0.8rem 0rem;
+}
+
+.figu img{/*images figure hébergement*/
+    width: 100%;
+    height: 120px;
+}
+
+.figh{/*figcaption hebergement*/
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 1%  0% 0% 4%;
+    height: 70px;
+}
+
+.figh p{/*paragraphe figcaption hebergement*/
+    margin: 0px;
+}
+
+#heb-ancre{
+    font-size: 1.2rem;
+    padding: 4% 0% 0% 6%;
+}
+
+section.hebergements > div > p{
+    padding-left:  6%;
+    margin-top: 0px;
+}
+
+
+
+
 
 /*--------------------------------aside"Les plus populaires"-*/
 .pop{/*div "les plus populaires"*/
     width: 100%;
+    margin-left: 0%;
+    order: -1;
+    border-radius: 0%;
+}
+
+.popu{/*div tritre + icône*/
+    justify-content: space-between;
+    padding: 4%;
+    padding-bottom: 0%;
+}
+
+div.popu > h2{/*titres aside populaire*/
+    padding-left: 0%;
+    margin: 0px;
+    padding: 0px;
+    font-size: 1.2rem;
+}
+
+
+.l_p_p{/*div conteneur figures*/
+    padding: 4%;
+    padding-top: 0%;
+    margin: 0%;
 }
 
 
 .figurep{/*div contenant chaque figure*/
-    height: auto;
+    height: 130px;
+    margin: 0.8rem 0rem 0.8rem 0rem;
 }
 
-.figup img{
-    height: 175px;
-    max-height: 175px;
-    
+.figup{/*figure populaire*/
+    flex-direction: row;
 }
+
+.figup img{/*images populaire*/
+    width: 40%;
+    height: 130px;
+    object-fit: cover;
+    border-radius: 20px 0px 0px 20px;
+}
+
 
 .figp{/*<figcaption> populaire*/
-    margin: 5px 5px 0px 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 2%;
+    margin-bottom: 0.5%;
+    width: 60%;
     height: auto;
+    text-align:left;
+    align-items: flex-start;
 }
 
-.figp p{
-    margin: 3% 3% 3% 3%;
+.figp p{/*paragraphe étoiles*/
+    margin: 0%;
+}
+
+.st{/*conteneur étoiles*/
+    padding-left: 0px;
 }
 
 /*-----------------------------------------------------------section"activitée"--------------------------------------------------------*/
 
-section .activites{/*section activitées*/
+section.activites{/*section activitées*/
     flex-direction: column;
+    padding: 4%;
 }
 
 .acti{/*div contenant actiGauche + actiDroite*/
-        flex-direction: column;
-        height: auto;
+    flex-direction: column;
+    height: auto;
 }
+
+#ac-ancre{
+    margin-bottom: 0px;
+}
+
+/*--------------------div*/
+div.actiG {
+    width: 100%;
+    margin: 0.8rem 0rem 0.8rem 0rem;
+}
+
+div.actiG > div.gauche{
+    width: 100%;
+    margin: 0.8rem 0rem 0.8rem 0rem;
+}
+
+div.actiG > div.hautG{
+    width: 100%;
+    margin: 0.8rem 0rem 0.8rem 0rem;
+}
+
+div.actiG > div.basG{
+    width: 100%;
+    margin: 0.8rem 0rem 0.8rem 0rem;
+}
+
+div.actiD {
+    width: 100%;
+    margin: 0.8rem 0rem 0.8rem 0rem;
+}
+
+div.actiD > div.gauche{
+    width: 100%;
+    margin: 0.8rem 0rem 0.8rem 0rem;
+}
+
+div.actiD > div.hautD{
+    width: 100%;
+    margin: 0.8rem 0rem 0.8rem 0rem;
+}
+
+div.actiD > div.basD{
+    width: 100%;
+    margin: 0.8rem 0rem 0.8rem 0rem;
+}
+/*********************************/
+
+/*--------------------figure*/
+.img-bas{
+    width: 100%;
+}
+.img-haut{
+    width: 100%;
+}
+.img-gauche{
+    width: 100%;
+}
+
+.img-basD{
+    width: 100%;
+}
+.img-hautD{
+    width: 100%;
+}
+.img-gaucheD{
+    width: 100%;
+}
+/*******************************/
+/*----------------------images*/
+
+div.actiG > div.gauche > a > figure > img{
+    height: 130px;
+}
+
+div.actiG > div.hautG > a > figure > img{
+    height: 130px;
+}
+
+div.actiG > div.basG > a > figure > img{
+    height: 130px;
+}
+
+div.actiD > div.gauche > a > figure > img{
+    height: 130px;
+}
+
+div.actiD > div.hautD > a > figure > img{
+    height: 130px;
+}
+
+div.actiD > div.basD > a > figure > img{
+    height: 130px;
+}
+/**************************************/
+
+
+
 
 /*-----------------------------------------------------------------footer--------------------------------------------------------------*/
 
 footer{
     flex-direction: column;
 }
+
+body > footer > ul:nth-child(-n+3){/*les 3 listes du footer*/
+    margin-right: 0px;
+    margin-top: 3rem;
+}
+
+body > footer > ul:nth-child(3){/*3ème liste du footer*/
+    margin-bottom: 2rem;
+}
+
+

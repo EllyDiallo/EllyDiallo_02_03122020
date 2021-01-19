@@ -49,7 +49,7 @@ a:link{
 header{
     justify-content: flex-end;
     display: flex;
-    height: 120px;
+    height: auto;
     align-items: center;
 }
 /*-------------------------------logo*/
@@ -128,7 +128,10 @@ p#ins{
 
 
 /*----------------------------------------------------section "Trouvez votre hébergement"-----------------------------------------*/
-
+.trouv{
+    height: auto;
+    
+}
 .trouv h1{
     margin-bottom: 0%;
 }
@@ -148,14 +151,17 @@ span.loc{     /*icône de localisation*/
     background-color:  #F2F2F3;
 }
 
+
 section.trouv > div.formu > span > i{/*span icône localisation*/
     font-size: 16px;
     width: 3rem;
     height: 2.1rem;
-    text-align: center;
-    margin-top: 0.8rem;
+    position: relative;
+    left: 40%;
+    top: 25%;
 }
-button.text{cursor:pointer;
+
+button.text{cursor:pointer;/*boutton rechercher*/
     color: white ;
     font-weight: bolder;
     background-color:  #0065FC;
@@ -165,13 +171,12 @@ button.text{cursor:pointer;
     border: none;
     font-size: 1rem;
 }
-button.loupe{    
+button.loupe{    /*bouton icône loupe*/
     color: white;
     background-color:#0065FC ;
     text-align: center;
     padding: 1.2rem;
     border-radius: 30%;
-    height: 100%;
     border: none;
 }
 
@@ -188,6 +193,7 @@ input#search{/*zone de recherche*/
         padding-right: 2rem;
         font-size: 1rem;
         font-weight: bold;
+        
 
 }
 
@@ -240,15 +246,16 @@ input#search::placeholder{/*texte prédéfini*/
 
     .filtres > .ico > .ic > .fas{/*icônes filtres*/
     position: relative;
-    top: 0px;
-    left: 0px;
+    top: -3px;
+    left: -3px;
     color: #0065FC;
     background-color: #DEEBFF;
     text-align: center;
     padding: 1rem;
+    padding-top: 1.4rem;
     border-radius: 50%;
-    width: 20px;
-    height: 20px;
+    width: 25px;
+    height: 17px;
 }
 
 .filtres > .ico > .ic > .fas:hover{/*icônes filtres au survol*/
@@ -382,7 +389,7 @@ margin: 0px;/*paragraphe autour étoiles grise*/
     width: 100%;
     height: 100%;
 }
-.figu{
+.figu{/*figure hebergement*/
     width: 100%;
     margin: 0%;
     height: auto;
@@ -460,11 +467,10 @@ div.popu > p > i{
 .figup{ /*<figure> populaire*/
     display: flex;
     margin: 0px;
-    height: 100%;
+    height: auto;
 }
 
-.figup img{
-  
+.figup img{ /*image figure populaire*/
     width: 40%;
     height: 148px;
     max-height: 148px;
