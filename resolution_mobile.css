@@ -11,9 +11,6 @@ main{
 
 /*---------------------------------------------------------------header--------------------------------------------------------------------------*/
 header{
-    justify-content: flex-end;
-    display: flex;
-    align-items: center;
     flex-wrap: wrap;
 }
 /*-------------------------------logo*/
@@ -26,24 +23,17 @@ div.logo{
 
 nav.menu{
     width: 100%;
-    height: 100%;
     order: 3;
 }
 
 /* 2 éléments nav*/
 
-#heb{
+#heb, #ac{
     border-bottom: 3px solid  #F2F2F2;
     padding: 40px 0px 40px 0px;
 }
 
-#ac{
-    border-bottom: 3px solid  #F2F2F2;
-    padding: 40px 0px 40px 0px;
-}
-
-
-#ac > a{
+#ac > a {
     padding-bottom: 0px;
     padding-top: 0px;
 }
@@ -52,14 +42,9 @@ nav.menu{
     padding: 0px;
 }
 
-#heb:hover{
+#heb:hover, #ac:hover{
     border-top: none;
     border-bottom: 3px solid  #0065FC ;
-}
-
-#ac:hover{
-   border-top: none;
-   border-bottom: 3px solid  #0065FC ;
 }
 
 /*------------paragraphe "s'inscrire"*/
@@ -120,9 +105,6 @@ section.trouv > div.formu > form{
     width: 100%;
 }
 
-/*input#search{
-    
-}*/
 /*-----------------------------------------div des filtres*/
 .filtres{
     flex-direction: column;

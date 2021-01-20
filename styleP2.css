@@ -2,7 +2,7 @@
 
 body{
     font-family: 'Raleway', sans-serif;
-     font-size: 16px;
+     font-size: 14px;
 }
 
 main{
@@ -29,7 +29,8 @@ figure{
     margin-block-start: 0em;
     margin-block-end: 0em;
     margin-inline-start: 0px;
-    margin-inline-end: 0px;
+    margin-inline-end: 0px; 
+   
 }
 
 li {
@@ -75,16 +76,12 @@ nav.menu ul{
 
 /* 2 éléments nav*/
 
-#heb{
+#heb, #ac{
     width: 50%;
     justify-content: center;
 }
 
-#ac{
-    width: 50%;
-    justify-content: center;
-}
-#heb > a{
+#heb > a, #ac > a{
     color: #0065FC ;
     font-weight: 500;
     height: 100%;
@@ -94,19 +91,13 @@ nav.menu ul{
     text-align: center;
 }
 
+#ac > a{
+    font-weight: 600;
+}
+
 #heb:hover{
     border-top: 3px solid #0065FC;
 }
-
-#ac > a{
-    font-weight: 600;
-    height: 100%;
-    padding-top: 40px;
-    padding-bottom: 40px;
-    width: 100%;
-    text-align: center;
-}
-
 
 #ac:hover{
     border-top: 3px solid black;
@@ -152,7 +143,7 @@ span.loc{     /*icône de localisation*/
 }
 
 
-section.trouv > div.formu > span > i{/*span icône localisation*/
+div.formu > span > i{/*span icône localisation*/
     font-size: 16px;
     width: 3rem;
     height: 2.1rem;
@@ -161,23 +152,25 @@ section.trouv > div.formu > span > i{/*span icône localisation*/
     top: 25%;
 }
 
-button.text{cursor:pointer;/*boutton rechercher*/
+button{
+    cursor:pointer;
     color: white ;
-    font-weight: bolder;
     background-color:  #0065FC;
+    border: none;
+}
+/*boutton rechercher*/
+button.text{
+    font-weight: bolder;
     padding: 1rem;
     border-top-right-radius: 15px;
     border-bottom-right-radius: 15px;
-    border: none;
+    
     font-size: 1rem;
 }
 button.loupe{    /*bouton icône loupe*/
-    color: white;
-    background-color:#0065FC ;
-    text-align: center;
+   text-align: center;
     padding: 1.2rem;
     border-radius: 30%;
-    border: none;
 }
 
 @media all and (min-width: 769px){
@@ -201,6 +194,7 @@ input#search::placeholder{/*texte prédéfini*/
     color: black;
     font-weight: bolder;
 }
+
 
 /*-----------------------------------------div des filtres*/
 .filtres{
@@ -244,7 +238,7 @@ input#search::placeholder{/*texte prédéfini*/
     margin: 0%;
 }
 
-    .filtres > .ico > .ic > .fas{/*icônes filtres*/
+.filtres > .ico > .ic > .fas{/*icônes filtres*/
     position: relative;
     top: -3px;
     left: -3px;
@@ -266,7 +260,6 @@ input#search::placeholder{/*texte prédéfini*/
     background-color:rgb(215, 248, 215);
     text-align: center;
     padding: 1rem;
-    border-radius: 50%;
     width: 20px;
     height: 20px;
 }
@@ -276,7 +269,7 @@ input#search::placeholder{/*texte prédéfini*/
 } 
 
 .fa-info::before {    /* icône d'information*/
-    color:  #0065FC;;
+    color:  #0065FC;
     border: 2px solid #F2F2F2; 
     background-color:  white;
     border-radius: 50%;
@@ -376,8 +369,8 @@ margin: 0px;/*paragraphe autour étoiles grise*/
 
 .figureh{/*div contenant chaque <figure>*/
     margin: 2.5% 1.5% 2% 1.5%;
-    background-color: white;
     border-radius: 20px;
+    background-color: white;
     padding: 5px;
     height: auto;
     width: 29.15%;
@@ -385,19 +378,18 @@ margin: 0px;/*paragraphe autour étoiles grise*/
     box-shadow: -3px 3px 10px 4px rgba(216, 216, 216, 0.5);
 }
 
-.figureh a{ 
-    width: 100%;
-    height: 100%;
-}
 .figu{/*figure hebergement*/
     width: 100%;
     margin: 0%;
     height: auto;
 }
 
+.figureh a{ 
+    width: 100%;
+    height: 100%;
+}
 
 .figu img{/*image*/
-  
     width: 100%;
     height: 120px;
     object-fit: cover;
@@ -421,19 +413,19 @@ margin: 0px;/*paragraphe autour étoiles grise*/
 .pop{/*div "les plus populaires"*/
     background-color:rgb(242, 242, 242) ;
     width: 27.1%;
-    height: 100%;
     padding: 3.5% 1.5% 1.5% 1.5%;
     border-radius: 2%;
     margin-left: 0%;
 }
 
-.popu{/*conteneur titre + icône schéma*/
+/*conteneur titre + icône schéma*/
+.popu{
     display: flex;
-    
 }
 
+/*paragraphe contenant l'icône shéma*/
 div.popu > p{
-    margin-top: 0px;/*paragraphe contenant l'icône shéma*/
+    margin-top: 0px;
     margin-left: 25%;
 }
 
@@ -525,7 +517,14 @@ section.hebergements > div > p{
         
 }
 
-.actiG{/*div Gauche*/
+.actiG > div, .actiD > div{
+    width: 47%;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: -3px 3px 10px 4px rgba(216, 216, 216, 0.5);
+}
+
+.actiG, .actiD{/*div Gauche*//*div Droite*/
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -534,145 +533,81 @@ section.hebergements > div > p{
     height: auto;
  }
     
- .actiD{/*div Droite*/
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    width: 48%;
-    background-color: white;
-    height: auto;
-    }
-    
 .gauche{/*div conteneur <figure> de gauche*/
-    width: 47%;
-    margin: 0%;
     margin-right: 6%;
-    background-color: white;
-    border-radius: 20px;
-    box-shadow: -3px 3px 10px 4px rgba(216, 216, 216, 0.5);
+    width: 47%;
 }
 
 .hautG{/*div conteneur <figure> du haut partie gauche*/
-    width: 47%;
-    margin: 0%;
     margin-bottom: 2%;
-    background-color: white;
-    border-radius: 20px;
-    box-shadow: -3px 3px 10px 4px rgba(216, 216, 216, 0.5);
 }
 
 .basG{/*div conteneur <figure> du bas partie gauche*/
-    width: 47%;
-    margin: 0px;
-    margin-top: 3%;
-    background-color: white;
-    border-radius: 20px;
-    box-shadow: -3px 3px 10px 4px rgba(216, 216, 216, 0.5);
+    margin-top: 2.4%;
+  
+}
+
+.img-basD{
+    width: 100%;
 }
 
 .hautD{/*div conteneur <figure> du haut partie droite*/
-    width: 47%;
-    margin: 0%;
     margin-bottom: 2%;
-    background-color: white;
-    border-radius: 20px;
-    box-shadow: -3px 3px 10px 4px rgba(216, 216, 216, 0.5);
 }
     
 .basD{/*div conteneur <figure> du bas partie droite*/
-    width: 47%;
-    margin: 0px;
-    margin-top: 3%;
-    background-color: white;
-    border-radius: 20px;
-    box-shadow: -3px 3px 10px 4px rgba(216, 216, 216, 0.5);
+   margin-top: 3%;
 }
 
 /*---------------------liens prenant toute la surface*/
-.gauche a{
+.acti > a{
     width: 100%;
     height: 100%;
-
 }
 
-.hautG a{
-    width: 100%;
-    height: 100%;
-
-}
-
-.basG a{
-    width: 100%;
-    height: 100%;
-
-}
-
-.hautD a{
-    width: 100%;
-    height: 100%;
-
-}
-
-.basD a{
-    width: 100%;
-    height: 100%;
-
-}
-
-
-div.actiG > div.gauche > a > figure > img{
-    height: 430px;/*image gauche partie gauche*/
+.acti__img{
     object-fit: cover;
     width: 100%;
     border-top-right-radius: 20px;
     border-top-left-radius: 20px;
 }
 
+div.actiG > div.gauche > a > figure > img{
+    height: 430px;/*image gauche partie gauche*/
+}
+
+/*image du haut partie gauche*/
 .actiG > div.hautG > a > figure > img {
-    object-fit: cover;/*image du haut partie gauche*/
-    height: 210px;
-    width: 100%;
-    border-top-right-radius: 20px;
-    border-top-left-radius: 20px;
+   height: 210px;
 }
 
 .actiG > div.hautG > a > figure{
     width: 100%;
 }
 
+.actiG > div.basG > a > figure{
+    width: 100%;
+}
+
+.actiD > div.hautD > a > figure{
+    width: 100%;
+}
+
 .actiG > div.basG > a > figure > img{
-    object-fit: cover;/*image du bas partie gauche*/
+    /*image du bas partie gauche*/
     height: 130px;
-     width: 100%;
-    border-top-right-radius: 20px;
-    border-top-left-radius: 20px;
 }
 
 div.actiD > div.gauche > a > figure > img{
     height: 430px;/*image gauche partiedroite*/
-    object-fit: cover;
-    width: 100%;
-    border-top-right-radius: 20px;
-    border-top-left-radius: 20px;
 }
 
-div.actiD > div.hautD > a > figure > img{
-    object-fit: cover;/*image du haut partie droite*/
-    height: 170px;
-    width: 100%;
-    border-top-right-radius: 20px;
-    border-top-left-radius: 20px;
+div.actiD > div.hautD > a > figure > img, div.actiD > div.basD > a > figure > img{
+    /*image du haut partie droite*/
+    height: 170px;   
 }
-    
-div.actiD > div.basD > a > figure > img{
-    object-fit: cover;/*image du bas partie droite*/
-    height: 170px;
-    width: 100%;
-    border-top-right-radius: 20px;
-    border-top-left-radius: 20px;
-}
+ 
 
-    
 /*-----------------------------------------------------------------footer--------------------------------------------------------------*/
 
 footer{
@@ -704,17 +639,11 @@ body > footer > ul > li:nth-child(1){/* police gars premier enfant liste*/
 
 @media all and (min-width: 1265px)  and (max-width: 1465px){
     .figu img{/*image*/
-  
         width: 330px;
         height: 120px;
-        object-fit: cover;
-        border-top-left-radius: 20px;
-        border-top-right-radius: 20px;
     }
     .figureh{/*div contenant chaque <figure>*/
         margin: 2.5% 1.5% 2% 1.5%;
-        background-color: white;
-        border-radius: 20px;
         padding: 5px;
         width: auto;
         min-width: 190px;
