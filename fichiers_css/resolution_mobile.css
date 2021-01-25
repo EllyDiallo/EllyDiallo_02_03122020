@@ -9,6 +9,10 @@ main{
     width: 100%;   
 }
 
+figure{
+    width: 100%;
+}
+
 /*---------------------------------------------------------------header--------------------------------------------------------------------------*/
 header{
     flex-wrap: wrap;
@@ -70,23 +74,27 @@ main > section.trouv > p{
     font-size: 0.95rem;
 }
 /*------------------------------------------------formulaire*/
-.formu{/*section conteneur formulaire*/
+/*section conteneur formulaire*/
+.formu{
     width: 100%;
     justify-content: space-between;
     height: auto;
-
 }
 
-span.loc{/* span icône localisation*/
+/* span icône localisation*/
+span.loc{
     width: 3.6rem;
-    
 }
-div.formu > form{/*div formulaire*/
+
+/*div formulaire*/
+div.formu > form{
     display: flex;
     width: auto;
     justify-content: space-between;
 }
-input#search{/*zone de recherche*/
+
+/*zone de recherche*/
+input#search{
     padding: 00.8rem 0rem 0.8rem 0.8rem;
     width: auto;
     min-width: 150px;
@@ -116,7 +124,8 @@ section.trouv > div.formu > form{
     
 }
 
-.filtres >.ico{/*div conteneur de l'ensemble des filtres*/
+/*div conteneur de l'ensemble des filtres*/
+.filtres >.ico{
     flex-wrap: wrap;
     margin-top: 0%;
 }
@@ -127,44 +136,47 @@ section.trouv > div.filtres > ul > li:nth-child(3){
 /*--------------------------------------------div information*/
 
 /*-----------------------------------------------------section-centrale"Hébergement"------------------------------------------------*/
-.hebergements{/*section hébergement*/
+/*section hébergement*/
+.hebergements{
     flex-direction: column;
     width: 100%;
 }
 
-/*div conteneur icônes stars populaires*/
-    
-
-
-.heberg{/*------------------------div Hébergement à Marseille*/
+/*------------------------div Hébergement à Marseille*/
+.heberg{
     width: 100%;
     border-radius: 0px;
     background-color: white;
 }
 
-.h_à_m{/*div conteneur figures hebergement*/
+/*div conteneur figures hebergement*/
+.h_à_m{
     padding: 4%;
     margin: 0px;
 }
 
-.figureh{/*figures hébergement*/
+/*figures hébergement*/
+.figureh{
     width: 100%;
     margin: 0.8rem 0rem 0.8rem 0rem;
 }
 
-.figu img{/*images figure hébergement*/
+/*images figure hébergement*/
+.figu img{
     width: 100%;
     height: 120px;
 }
 
-.figh{/*figcaption hebergement*/
+/*figcaption hebergement*/
+.figh{
     align-items: flex-start;
     justify-content: space-between;
     padding: 1%  0% 0% 4%;
     height: 70px;
 }
 
-.figh p{/*paragraphe figcaption hebergement*/
+/*paragraphe figcaption hebergement*/
+.figh p{
     margin: 0px;
 }
 
@@ -183,52 +195,57 @@ section.hebergements > div > p{
 
 
 /*--------------------------------aside"Les plus populaires"-*/
-.pop{/*div "les plus populaires"*/
+/*div "les plus populaires"*/
+.pop{
     width: 100%;
     margin-left: 0%;
     order: -1;
     border-radius: 0%;
 }
 
-.popu{/*div tritre + icône*/
+/*div tritre + icône*/
+.popu{
     justify-content: space-between;
     padding: 4%;
     padding-bottom: 0%;
 }
 
-div.popu > h2{/*titres aside populaire*/
+/*titres aside populaire*/
+div.popu > h2{
     padding-left: 0%;
     margin: 0px;
     padding: 0px;
     font-size: 1.2rem;
 }
 
-
-.l_p_p{/*div conteneur figures*/
+/*div conteneur figures*/
+.l_p_p{
     padding: 4%;
     padding-top: 0%;
     margin: 0%;
 }
 
-
-.figurep{/*div contenant chaque figure*/
+/*div contenant chaque figure*/
+.figurep{
     height: 130px;
     margin: 0.8rem 0rem 0.8rem 0rem;
 }
 
-.figup{/*figure populaire*/
+/*figure populaire*/
+.figup{
     flex-direction: row;
 }
 
-.figup img{/*images populaire*/
+/*images populaire*/
+.figup img{
     width: 40%;
     height: 130px;
     object-fit: cover;
     border-radius: 20px 0px 0px 20px;
 }
 
-
-.figp{/*<figcaption> populaire*/
+/*<figcaption> populaire*/
+.figp{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -240,22 +257,25 @@ div.popu > h2{/*titres aside populaire*/
     align-items: flex-start;
 }
 
-.figp p{/*paragraphe étoiles*/
+/*paragraphe étoiles*/
+.figp p{
     margin: 0%;
 }
 
-.st{/*conteneur étoiles*/
+/*conteneur étoiles*/
+.st{
     padding-left: 0px;
 }
 
 /*-----------------------------------------------------------section"activitée"--------------------------------------------------------*/
-
-section.activites{/*section activitées*/
+/*section activitées*/
+section.activites{
     flex-direction: column;
     padding: 4%;
 }
 
-.acti{/*div contenant actiGauche + actiDroite*/
+/*div contenant actiGauche + actiDroite*/
+.acti{
     flex-direction: column;
     height: auto;
 }
@@ -265,68 +285,21 @@ section.activites{/*section activitées*/
 }
 
 /*--------------------div*/
-div.actiG {
+.acti > div{
     width: 100%;
     margin: 0.8rem 0rem 0.8rem 0rem;
 }
 
-div.actiG > div.gauche{
+div.actiG > div{
     width: 100%;
     margin: 0.8rem 0rem 0.8rem 0rem;
 }
 
-div.actiG > div.hautG{
+div.actiD > div{
     width: 100%;
     margin: 0.8rem 0rem 0.8rem 0rem;
 }
 
-div.actiG > div.basG{
-    width: 100%;
-    margin: 0.8rem 0rem 0.8rem 0rem;
-}
-
-div.actiD {
-    width: 100%;
-    margin: 0.8rem 0rem 0.8rem 0rem;
-}
-
-div.actiD > div.gauche{
-    width: 100%;
-    margin: 0.8rem 0rem 0.8rem 0rem;
-}
-
-div.actiD > div.hautD{
-    width: 100%;
-    margin: 0.8rem 0rem 0.8rem 0rem;
-}
-
-div.actiD > div.basD{
-    width: 100%;
-    margin: 0.8rem 0rem 0.8rem 0rem;
-}
-/*********************************/
-
-/*--------------------figure*/
-.img-bas{
-    width: 100%;
-}
-.img-haut{
-    width: 100%;
-}
-.img-gauche{
-    width: 100%;
-}
-
-.img-basD{
-    width: 100%;
-}
-.img-hautD{
-    width: 100%;
-}
-.img-gaucheD{
-    width: 100%;
-}
-/*******************************/
 /*----------------------images*/
 
 div.actiG > div.gauche > a > figure > img{

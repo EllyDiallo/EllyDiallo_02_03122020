@@ -108,7 +108,7 @@ p#ins{
     color: #0065FC ;
     width: 6.25%;
     font-weight: bolder;
-    padding-top: 3%;
+    padding-top: 40px;
     padding-bottom: 2.189%;
     text-align: end;
     margin: 0%;
@@ -134,15 +134,16 @@ p#ins{
     border-radius: 15px;
 }
 
-span.loc{     /*icône de localisation*/
+ /*icône de localisation*/
+span.loc{    
     border: 1px solid #F2F2F2;
     border-top-left-radius:15px;
     border-bottom-left-radius:15px;
     background-color:  #F2F2F3;
 }
 
-
-div.formu > span > i{/*span icône localisation*/
+/*span icône localisation*/
+div.formu > span > i{
     font-size: 16px;
     width: 3rem;
     height: 2.1rem;
@@ -157,6 +158,7 @@ button{
     background-color:  #0065FC;
     border: none;
 }
+
 /*boutton rechercher*/
 button.text{
     font-weight: bolder;
@@ -166,7 +168,9 @@ button.text{
     
     font-size: 1rem;
 }
-button.loupe{    /*bouton icône loupe*/
+
+/*bouton icône loupe*/
+button.loupe{    
    text-align: center;
     padding: 1.2rem;
     border-radius: 30%;
@@ -177,9 +181,8 @@ button.loupe{    /*bouton icône loupe*/
 }
 }
 
-
-
-input#search{/*zone de recherche*/
+/*zone de recherche*/
+input#search{
         border: none;
         padding: 1rem;
         padding-right: 2rem;
@@ -189,7 +192,8 @@ input#search{/*zone de recherche*/
 
 }
 
-input#search::placeholder{/*texte prédéfini*/
+/*texte prédéfini*/
+input#search::placeholder{
     color: black;
     font-weight: bolder;
 }
@@ -205,22 +209,26 @@ input#search::placeholder{/*texte prédéfini*/
     margin-right: 1rem;
 }
 
-.filtres >.ico{/*div conteneur de l'ensemble des filtres*/
+/*div conteneur de l'ensemble des filtres*/
+.filtres >.ico{
     display: flex;
     padding: 0%;
 }
 
-.filtres > .ico > .ic{/*div conteneur filtre*/
+/*div conteneur filtre*/
+.filtres > .ico > .ic{
     font-weight: bold;
     box-sizing: border-box;
     border-radius: 40px;
     height: 56px;
     border: 3px solid #F2F2F2 ;
     margin-right: 1rem;
+    margin-top: 4px;
 
 }
 
-.filtres > .ico > .ic:hover{/*div conteneur filtre au survol*/
+/*div conteneur filtre au survol*/
+.filtres > .ico > .ic:hover{
     font-weight: bold;
     box-sizing: border-box;
     border-radius: 40px;
@@ -229,15 +237,17 @@ input#search::placeholder{/*texte prédéfini*/
     margin-right: 1rem;
     background-color: rgb(215, 248, 215);
     box-shadow: 3px -3px 4px rgba(75, 15, 15, 0.5);
+    margin-top: 0px;
     
 }
 
-.filtres >.ico > .ic > p {/*paragraphe autour du filtre*/
+.filtres >.ico > .ic > p {
     padding: 1rem;
     margin: 0%;
 }
 
-.filtres > .ico > .ic > .fas{/*icônes filtres*/
+/*icônes filtres*/
+.filtres > .ico > .ic > .fas{
     position: relative;
     top: -3px;
     left: -3px;
@@ -251,7 +261,8 @@ input#search::placeholder{/*texte prédéfini*/
     height: 17px;
 }
 
-.filtres > .ico > .ic > .fas:hover{/*icônes filtres au survol*/
+/*icônes filtres au survol*/
+.filtres > .ico > .ic > .fas:hover{
     position: relative;
     top: 0px;
     left: 0px;
@@ -263,11 +274,13 @@ input#search::placeholder{/*texte prédéfini*/
     height: 20px;
 }
 /*--------------------------------------------div information*/
-.info{ /*div "plus de 500 logements"*/
+ /*div "plus de 500 logements"*/
+.info{
     display: flex;
 } 
 
-.fa-info::before {    /* icône d'information*/
+/* icône d'information*/
+.fa-info::before {    
     color:  #0065FC;
     border: 2px solid #F2F2F2; 
     background-color:  white;
@@ -277,7 +290,8 @@ input#search::placeholder{/*texte prédéfini*/
     padding-right: 00.6rem;
 }
 
-p.infopara { /*paragraphe d'information*/
+/*paragraphe d'information*/
+p.infopara { 
     padding-left: 10px;
 }
 
@@ -289,13 +303,15 @@ p.infopara { /*paragraphe d'information*/
     width: auto;
 }
 
-.heberg h2{/*titres hébergement*/
+/*titres hébergement*/
+.heberg h2{
     padding-left: 2.6%;
     margin: 0px;
 }
 
+/*titres populaires*/
 section.hebergements > aside > div.popu > h2{
-    padding-left: 7%;/*titres populaires*/
+    padding-left: 7%;
     margin: 0px;
 }
 
@@ -309,43 +325,53 @@ section.hebergements > aside > div.popu > h2{
     font-weight: bold;
 }
 
-.st{/*div conteneur icônes stars hébergement*/
+/*div conteneur icônes stars hébergement*/
+.st{
     padding-left: 4px;
     padding-bottom: 4px;
     display: flex;
 }
 
-.stp{/*div conteneur icônes stars populaires*/
+/*div conteneur icônes stars populaires*/
+.stp{
     display: flex;
     padding: 0% 0% 1% 2%;
 
 }
 
-p.stb, p.stg{/*paragraphe icônes stars*/
+/*paragraphe icônes stars*/
+p.stb, p.stg{
     display: inline-block;
     margin-right: 0px;
 }
 
-p.stg{/*paragraphe icône stars grises*/
+/*paragraphe icône stars grises*/
+p.stg{
     margin-left: 0px;
 }
-p.stg .fas{/*icône stars grise*/
+
+/*icône stars grise*/
+p.stg .fas{
     color:rgb(218, 218, 218) ;
 }
 
-p.stb .fas{/*icône stars bleues*/
+/*icône stars bleues*/
+p.stb .fas{
     color:#0065FC ;
 }
 
+/*paragraphe autour étoiles bleues*/
 section.hebergements > div > div > div:nth-child(-n+6) > a > figure > figcaption > div > p.stb{
-    margin: 0px;/*paragraphe autour étoiles bleues*/
+    margin: 0px;
 }
 
+/*paragraphe autour étoiles grise*/
 section.hebergements > div > div > div:nth-child(-n+6) > a > figure > figcaption > div > p.stg{
-margin: 0px;/*paragraphe autour étoiles grise*/
+margin: 0px;
 }
 
-.heberg{/*------------------------div Hébergement à Marseille*/
+/*------------------------div Hébergement à Marseille*/
+.heberg{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -356,7 +382,8 @@ margin: 0px;/*paragraphe autour étoiles grise*/
     border-radius: 2%;
 }
 
-.h_à_m{/* div conteneur des <figure>*/
+/* div conteneur des <figure>*/
+.h_à_m{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -366,7 +393,8 @@ margin: 0px;/*paragraphe autour étoiles grise*/
     margin-top: 0px;
 }
 
-.figureh{/*div contenant chaque <figure>*/
+/*div contenant chaque <figure>*/
+.figureh{
     margin: 2.5% 1.5% 2% 1.5%;
     border-radius: 20px;
     background-color: white;
@@ -377,7 +405,8 @@ margin: 0px;/*paragraphe autour étoiles grise*/
     box-shadow: -3px 3px 10px 4px rgba(216, 216, 216, 0.5);
 }
 
-.figu{/*figure hebergement*/
+/*figure hebergement*/
+.figu{
     width: 100%;
     margin: 0%;
     height: auto;
@@ -388,7 +417,8 @@ margin: 0px;/*paragraphe autour étoiles grise*/
     height: 100%;
 }
 
-.figu img{/*image*/
+/*image*/
+.figu img{
     width: 100%;
     height: 120px;
     object-fit: cover;
@@ -396,7 +426,8 @@ margin: 0px;/*paragraphe autour étoiles grise*/
     border-top-right-radius: 20px;
 }
 
-.figh{/*figcaption hébergement*/
+/*figcaption hébergement*/
+.figh{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -409,7 +440,8 @@ margin: 0px;/*paragraphe autour étoiles grise*/
 
 
 /*--------------------------------aside"Les plus populaires"-*/
-.pop{/*div "les plus populaires"*/
+/*div "les plus populaires"*/
+.pop{
     background-color:rgb(242, 242, 242) ;
     width: 27.1%;
     padding: 3.5% 1.5% 1.5% 1.5%;
@@ -428,11 +460,13 @@ div.popu > p{
     margin-left: 25%;
 }
 
+/*icône shéma*/
 div.popu > p > i{
-    font-size: 1.5rem;/*icône shéma*/
+    font-size: 1.5rem;
 }
 
-.l_p_p{/*conteneur <figure>*/
+/*conteneur <figure>*/
+.l_p_p{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -440,7 +474,8 @@ div.popu > p > i{
     margin-top: 0px;
 }
 
-.figurep{/*div contenant chaque figure*/
+/*div contenant chaque figure*/
+.figurep{
     background-color: white;
     border-radius: 20px;
     margin: 4% 1.1% 3.5% 1%;
@@ -455,13 +490,15 @@ div.popu > p > i{
     height: auto;
 }
 
-.figup{ /*<figure> populaire*/
+/*<figure> populaire*/
+.figup{ 
     display: flex;
     margin: 0px;
     height: auto;
 }
 
-.figup img{ /*image figure populaire*/
+ /*image figure populaire*/
+.figup img{
     width: 40%;
     height: 148px;
     max-height: 148px;
@@ -470,7 +507,8 @@ div.popu > p > i{
     border-bottom-left-radius: 20px;
 }
 
-.figp{/*<figcaption> populaire*/
+/*<figcaption> populaire*/
+.figp{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -486,21 +524,25 @@ div.l_p_p > div:nth-child(-n+3) > a > figure > figcaption > p:nth-child(2){
     margin-bottom: 15%;
 }
 
+/* paragraphe autour étoile bleues*/
 div.l_p_p > div:nth-child(-n+3) > a > figure > figcaption > div > p.stb{
-    margin: 0px;/* paragraphe autour étoile bleues*/
+    margin: 0px;
 }
+
+/*paragraphe autoour étoiles grises*/
 div.l_p_p > div:nth-child(-n+3) > a > figure > figcaption > div > p.stg{
-    margin: 0px;/*paragraphe autoour étoiles grises*/
+    margin: 0px;
 }
 
 
 /*-----------------------------------------------------------section"activitée"--------------------------------------------------------*/
-
-section .activites{/*section activitées*/
+/*section activitées*/
+section .activites{
     display: flex;
 }
 
-.actifig{/*figcaption section activitées*/
+/*figcaption section activitées*/
+.actifig{
     padding: 1rem;
     font-weight: bolder;
 }
@@ -509,7 +551,8 @@ section.hebergements > div > p{
     font-weight: bold;
 }
 
-.acti{/*div contenant actiGauche + actiDroite*/
+/*div contenant actiGauche + actiDroite*/
+.acti{
         display: flex;
         height: 500px;
         justify-content: space-between;
@@ -523,7 +566,8 @@ section.hebergements > div > p{
     box-shadow: -3px 3px 10px 4px rgba(216, 216, 216, 0.5);
 }
 
-.actiG, .actiD{/*div Gauche*//*div Droite*/
+/*div Gauche*//*div Droite*/
+.actiG, .actiD{
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -531,17 +575,20 @@ section.hebergements > div > p{
     background-color: white;
     height: auto;
  }
-    
-.gauche{/*div conteneur <figure> de gauche*/
+
+/*div conteneur <figure> de gauche*/
+.gauche{
     margin-right: 6%;
     width: 47%;
 }
 
-.hautG{/*div conteneur <figure> du haut partie gauche*/
+/*div conteneur <figure> du haut partie gauche*/
+.hautG{
     margin-bottom: 2%;
 }
 
-.basG{/*div conteneur <figure> du bas partie gauche*/
+/*div conteneur <figure> du bas partie gauche*/
+.basG{
     margin-top: 2.4%;
   
 }
@@ -550,11 +597,13 @@ section.hebergements > div > p{
     width: 100%;
 }
 
-.hautD{/*div conteneur <figure> du haut partie droite*/
+/*div conteneur <figure> du haut partie droite*/
+.hautD{
     margin-bottom: 2%;
 }
     
-.basD{/*div conteneur <figure> du bas partie droite*/
+/*div conteneur <figure> du bas partie droite*/
+.basD{
    margin-top: 3%;
 }
 
@@ -571,13 +620,26 @@ section.hebergements > div > p{
     border-top-left-radius: 20px;
 }
 
+/*image gauche partie gauche*/
+
 div.actiG > div.gauche > a > figure > img{
-    height: 430px;/*image gauche partie gauche*/
+    height: 430px;
 }
 
 /*image du haut partie gauche*/
 .actiG > div.hautG > a > figure > img {
    height: 210px;
+}
+
+/*image du bas partie gauche*/
+.actiG > div.basG > a > figure > img{
+    
+    height: 130px;
+}
+
+/*image gauche partiedroite*/
+div.actiD > div.gauche > a > figure > img{
+    height: 430px;
 }
 
 .actiG > div.hautG > a > figure{
@@ -592,18 +654,10 @@ div.actiG > div.gauche > a > figure > img{
     width: 100%;
 }
 
-.actiG > div.basG > a > figure > img{
-    /*image du bas partie gauche*/
-    height: 130px;
-}
 
-div.actiD > div.gauche > a > figure > img{
-    height: 430px;/*image gauche partiedroite*/
-}
-
+/*image du haut partie droite*/
 div.actiD > div.hautD > a > figure > img, div.actiD > div.basD > a > figure > img{
-    /*image du haut partie droite*/
-    height: 170px;   
+     height: 170px;   
 }
  
 
@@ -616,7 +670,8 @@ footer{
     margin-top: 3rem;
 }
 
-body > footer > ul{/*Liste footer*/
+/*Liste footer*/
+body > footer > ul{
     padding-left: 0%;
     margin-top: 2rem;
     margin-right: 13rem;
@@ -624,24 +679,30 @@ body > footer > ul{/*Liste footer*/
     margin-left: 2rem;
 }
 
-body > footer > ul > li{/*ligne liste footer*/
+/*ligne liste footer*/
+body > footer > ul > li{
     margin-top: 1rem;
     margin-bottom:0%;
     font-weight: 500;
 }
 
-
-body > footer > ul > li:nth-child(1){/* police gars premier enfant liste*/
+/* police gars premier enfant liste*/
+body > footer > ul > li:nth-child(1){
     font-weight: bold;
 }
 
 
+
 @media all and (min-width: 1265px)  and (max-width: 1465px){
-    .figu img{/*image*/
+    
+    /*image*/
+    .figu img{
         width: 330px;
         height: 120px;
     }
-    .figureh{/*div contenant chaque <figure>*/
+    
+    /*div contenant chaque <figure>*/
+    .figureh{
         margin: 2.5% 1.5% 2% 1.5%;
         padding: 5px;
         width: auto;

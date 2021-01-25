@@ -43,17 +43,23 @@ nav.menu{
     margin-right: 1%;
 }
 
-.h_à_m{/* div conteneur des <figure>*/
+/* div conteneur des <figure>*/
+.h_à_m{
     justify-content: center;
 }
 
-.figureh{/*figure hebergement*/
+/*figure hebergement*/
+.figureh{
     width: auto;
 }
-.figu img{/*image*/
+
+/*image*/
+.figu img{
   width: 200px;
 }
-.figh{/*figcaption hébergement*/
+
+/*figcaption hébergement*/
+.figh{
     align-items: center;
     padding-left: 0px;
 }
@@ -62,34 +68,36 @@ div.l_p_p > div:nth-child(-n+3) > a > figure > figcaption > p:nth-child(2){
     margin-bottom: 0%;
 }
 
-
-
 /*--------------------------------aside"Les plus populaires"-*/
-.pop{/*div "les plus populaires"*/
+
+/*div "les plus populaires"*/
+.pop{
     width: 40%;
     height: 100%;
     padding: 1% 1.5% 1.5% 1%;
     margin-left: 2%;
 }
 
+/*paragraphe contenant l'icône shéma*/
 div.popu > p{
-    /*paragraphe contenant l'icône shéma*/
     margin-left: 20%;
 }
 
-
-.figurep{/*div contenant chaque figure*/
+/*div contenant chaque figure*/
+.figurep{
     margin: 2% 1.1% 2% 1%;
     height: 100%;
 }
 
-.figup{ /*<figure> populaire*/
+/*<figure> populaire*/
+.figup{ 
     flex-direction: column;
     width: auto;
     height: auto;
 }
 
-.figup img{/* image <figure> populaire*/
+/* image <figure> populaire*/
+.figup img{
     width: auto;
     height: 250px;
     border-top-left-radius: 20px;
@@ -97,7 +105,8 @@ div.popu > p{
     border-bottom-left-radius: 0%;
 }
 
-.figp{/*<figcaption> populaire*/
+/*<figcaption> populaire*/
+.figp{
     margin: 2px 2px 2px 2px;
     width: 100%;
     height: 40%;
@@ -113,11 +122,14 @@ div.popu > p{
 
 /*-----------------------------------------------------------------footer--------------------------------------------------------------*/
 @media all and (min-width: 769px)  and (max-width: 931px){
-    .figu img{/*image*/
+    
+    /*image*/
+    .figu img{
         width: 330px;
     }
     
-    .acti{/*section activitées*/
+    /*section activitées*/
+    .acti{
         flex-direction: column;
         height: auto;
         width: 100%;
