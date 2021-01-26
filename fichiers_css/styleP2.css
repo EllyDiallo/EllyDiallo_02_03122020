@@ -90,12 +90,14 @@ nav.menu ul{
     font-weight: 600;
 }
 
-#heb:hover{
+#heb > a:hover{
     border-top: 3px solid #0065FC;
+    padding-top: 37px;
 }
 
-#ac:hover{
+#ac > a:hover{
     border-top: 3px solid black;
+    padding-top: 37px;
 }
 
 
