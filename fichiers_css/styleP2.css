@@ -603,7 +603,7 @@ section.hebergements > div > p{
    margin-top: 3%;
 }
 
-/*---------------------liens prenant toute la surface*/
+/*liens prenant toute la surface*/
 .acti > a{
     width: 100%;
     height: 100%;
@@ -624,13 +624,13 @@ div.actiG > div.gauche > a > figure > img{
 
 /*image du haut partie gauche*/
 .actiG > div.hautG > a > figure > img {
-   height: 210px;
+   height: 209px;
 }
 
 /*image du bas partie gauche*/
 .actiG > div.basG > a > figure > img{
     
-    height: 130px;
+    height: 136px;
 }
 
 /*image gauche partiedroite*/
