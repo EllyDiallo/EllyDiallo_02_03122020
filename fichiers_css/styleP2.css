@@ -77,8 +77,8 @@ nav.menu ul{
 }
 
 #heb > a, #ac > a{
-    color: #0065FC ;
-    font-weight: 500;
+    color:black ;
+    font-weight: 600;
     height: 100%;
     padding-top: 40px;
     padding-bottom: 40px;
@@ -86,17 +86,10 @@ nav.menu ul{
     text-align: center;
 }
 
-#ac > a{
-    font-weight: 600;
-}
 
-#heb > a:hover{
+#heb > a:hover,#ac > a:hover{
+    color:  #0065FC;
     border-top: 3px solid #0065FC;
-    padding-top: 37px;
-}
-
-#ac > a:hover{
-    border-top: 3px solid black;
     padding-top: 37px;
 }
 
