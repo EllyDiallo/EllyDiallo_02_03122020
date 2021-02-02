@@ -47,6 +47,8 @@ header{
     display: flex;
     height: auto;
     align-items: center;
+    width: 96%;
+    margin: 0px auto;
 }
 /*-------------------------------logo*/
 div.logo {
