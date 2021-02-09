@@ -96,7 +96,7 @@ nav.menu ul{
 }
 
 
-p#ins{
+#ins{
     display: inline-block;
     color: #0065FC ;
     width: 6.25%;
@@ -106,9 +106,10 @@ p#ins{
     text-align: end;
     margin: 0%;
     height: 22%;
-
 }
-
+#ins > a{
+    color: #0065FC;
+}
 
 /*----------------------------------------------------section "Trouvez votre hébergement"-----------------------------------------*/
 .trouv{
@@ -150,27 +151,35 @@ button{
     color: white ;
     background-color:  #0065FC;
     border: none;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
 }
 
 /*boutton rechercher*/
-button.text{
+/*button.text{
     font-weight: bolder;
     padding: 1rem;
     border-top-right-radius: 15px;
     border-bottom-right-radius: 15px;
     
     font-size: 1rem;
-}
+}*/
 
+
+ form > button >div.text{
+    font-weight: bolder;
+    padding: 1rem;
+    font-size: 1rem;
+ }
 /*bouton icône loupe*/
-button.loupe{    
+i.loupe{    
    text-align: center;
     padding: 1.2rem;
     border-radius: 30%;
 }
 
 @media all and (min-width: 769px){
-  button.loupe{  display: none;
+  i.loupe{  display: none;
 }
 }
 
@@ -197,7 +206,12 @@ input#search::placeholder{
     display: flex;
 }
 
-.filtres > p{
+ div.filtres > h2{
+    padding-top: 1rem;
+    margin: 1rem 1rem 1rem 0rem;
+ }
+
+.filtres > span{
     padding-top: 1rem;
     margin-right: 1rem;
 }
@@ -234,9 +248,10 @@ input#search::placeholder{
     
 }
 
-.filtres >.ico > .ic > p {
+.filtres >.ico > .ic > span {
     padding: 1rem;
     margin: 0%;
+    font-size: 1rem;
 }
 
 /*icônes filtres*/
@@ -281,7 +296,12 @@ input#search::placeholder{
     padding: 0.2rem;
     padding-left: 0.6rem;
     padding-right: 00.6rem;
+    
 }
+
+ div.info > i{
+     margin-top: 1rem;
+ }
 
 /*paragraphe d'information*/
 p.infopara { 
@@ -308,14 +328,17 @@ section.hebergements > aside > div.popu > h2{
     margin: 0px;
 }
 
-.nomlieu{
-    font-size: 1.1rem;
+h3.nomlieu{
+    font-size: 1rem;
     font-weight: bolder;
+    margin: 0.3111rem 0rem 0rem 0.3111rem;
+    color: black;
 }
 
 
 .prix{
     font-weight: bold;
+    font-style: normal;
 }
 
 /*div conteneur icônes stars hébergement*/
@@ -323,6 +346,7 @@ section.hebergements > aside > div.popu > h2{
     padding-left: 4px;
     padding-bottom: 4px;
     display: flex;
+    margin: 5px 5px 0px 0px;
 }
 
 /*div conteneur icônes stars populaires*/
@@ -332,27 +356,15 @@ section.hebergements > aside > div.popu > h2{
 
 }
 
-/*paragraphe icônes stars*/
-p.stb, p.stg{
-    display: inline-block;
-    margin-right: 0px;
+.blue{
+    color: #0065FC;
+    font-size: 1.1rem;
+    
 }
-
-/*paragraphe icône stars grises*/
-p.stg{
-    margin-left: 0px;
-}
-
-/*icône stars grise*/
-p.stg .fas{
+.grey{
     color:rgb(218, 218, 218) ;
+    font-size: 1.1rem;
 }
-
-/*icône stars bleues*/
-p.stb .fas{
-    color:#0065FC ;
-}
-
 /*paragraphe autour étoiles bleues*/
 section.hebergements > div > div > div:nth-child(-n+6) > a > figure > figcaption > div > p.stb{
     margin: 0px;
@@ -386,6 +398,8 @@ margin: 0px;
     margin-top: 0px;
 }
 
+ 
+
 /*div contenant chaque <figure>*/
 .figureh{
     margin: 2.5% 1.5% 2% 1.5%;
@@ -411,7 +425,7 @@ margin: 0px;
 }
 
 /*image*/
-.figu img{
+.figu > picture > img{
     width: 100%;
     height: 120px;
     object-fit: cover;
@@ -427,8 +441,10 @@ margin: 0px;
     padding-left: 10px;
 }
 
-.figh p{
+.figh span{
     margin: 5px 5px 0px 5px;
+    color: black;
+    font-size: 1rem;
 }
 
 
@@ -445,12 +461,17 @@ margin: 0px;
 /*conteneur titre + icône schéma*/
 .popu{
     display: flex;
+    justify-content: space-between;
 }
 
 /*paragraphe contenant l'icône shéma*/
 div.popu > p{
-    margin-top: 0px;
-    margin-left: 25%;
+    
+}
+
+div.popu > i{
+   font-size: 1.5rem;
+   margin-right: 1rem;
 }
 
 /*icône shéma*/
@@ -490,9 +511,14 @@ div.popu > p > i{
     height: auto;
 }
 
- /*image figure populaire*/
-.figup img{
+div.l_p_p > div > a > figure > picture{
     width: 40%;
+   
+}
+
+ /*image figure populaire*/
+.figup > picture > img{
+    width: 100%;
     height: 148px;
     max-height: 148px;
     object-fit: cover;
@@ -509,8 +535,14 @@ div.popu > p > i{
     width: 60%;
 }
 
-.figp p{
-    margin: 0% 3% 0% 3%;
+.figp span{
+    margin: 0% 3% 15% 3%;
+    font-size: 1rem;
+    color: black;
+}
+.acti h3{
+    margin: 0px;
+    color: black;
 }
 
 div.l_p_p > div:nth-child(-n+3) > a > figure > figcaption > p:nth-child(2){
@@ -615,25 +647,31 @@ section.hebergements > div > p{
 
 /*image gauche partie gauche*/
 
-div.actiG > div.gauche > a > figure > img{
+div.actiG > div.gauche > a > figure > picture > img{
     height: 430px;
 }
 
 /*image du haut partie gauche*/
-.actiG > div.hautG > a > figure > img {
-   height: 209px;
+.actiG > div.hautG > a > figure > picture > img {
+   height: 204px;
 }
 
 /*image du bas partie gauche*/
-.actiG > div.basG > a > figure > img{
+.actiG > div.basG > a > figure > picture > img{
     
-    height: 136px;
+    height: 135px;
 }
 
 /*image gauche partiedroite*/
-div.actiD > div.gauche > a > figure > img{
+div.actiD > div.gauche > a > figure > picture > img{
     height: 430px;
 }
+
+/*image du haut partie droite*/
+div.actiD > div.hautD > a > figure > picture > img, div.actiD > div.basD > a > figure > picture > img{
+    height: 166px;   
+}
+
 
 .actiG > div.hautG > a > figure{
     width: 100%;
@@ -648,11 +686,7 @@ div.actiD > div.gauche > a > figure > img{
 }
 
 
-/*image du haut partie droite*/
-div.actiD > div.hautD > a > figure > img, div.actiD > div.basD > a > figure > img{
-     height: 170px;   
-}
- 
+
 
 /*-----------------------------------------------------------------footer--------------------------------------------------------------*/
 
@@ -667,7 +701,7 @@ footer{
 body > footer > ul{
     padding-left: 0%;
     margin-top: 2rem;
-    margin-right: 13rem;
+    margin-right: 25%;
     margin-bottom: 0%;
     margin-left: 2rem;
 }
@@ -677,6 +711,11 @@ body > footer > ul > li{
     margin-top: 1rem;
     margin-bottom:0%;
     font-weight: 500;
+}
+
+body > footer > ul > li > a{
+    text-decoration: none;
+    color: black;
 }
 
 /* police gars premier enfant liste*/
@@ -689,7 +728,7 @@ body > footer > ul > li:nth-child(1){
 @media all and (min-width: 1265px)  and (max-width: 1465px){
     
     /*image*/
-    .figu img{
+    .figu > picture > img{
         width: 330px;
         height: 120px;
     }

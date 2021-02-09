@@ -50,9 +50,13 @@ nav.menu{
     border-top: none;
     border-bottom: 3px solid  #0065FC ;
 }
+#heb > a:hover,#ac > a:hover{
+    border-top: none;
+    padding-top: 0px ;
+}
 
 /*------------paragraphe "s'inscrire"*/
-p#ins{
+#ins{
     width: 48%;
     padding-right: 2%;
 }
@@ -102,10 +106,7 @@ input#search{
     
 }
 
-button.loupe{
-    width: 3.6rem;
-}
-button.text{
+div.text{
     display: none;
 }
 
@@ -162,7 +163,7 @@ section.trouv > div.filtres > ul > li:nth-child(3){
 }
 
 /*images figure hébergement*/
-.figu img{
+.figu > picture > img{
     width: 100%;
     height: 120px;
 }
@@ -171,7 +172,7 @@ section.trouv > div.filtres > ul > li:nth-child(3){
 .figh{
     align-items: flex-start;
     justify-content: space-between;
-    padding: 1%  0% 0% 4%;
+    padding: 1%  0% 1% 4%;
     height: 70px;
 }
 
@@ -237,11 +238,15 @@ div.popu > h2{
 }
 
 /*images populaire*/
-.figup img{
-    width: 40%;
+.figup > picture > img{
+    width: 100%;
     height: 130px;
     object-fit: cover;
     border-radius: 20px 0px 0px 20px;
+}
+
+div.l_p_p > div > a > figure > picture {
+     width: 40%; 
 }
 
 /*<figcaption> populaire*/
@@ -257,16 +262,18 @@ div.popu > h2{
     align-items: flex-start;
 }
 
+.figp span{
+    margin: 0px 0px 0px 0.311rem;
+}
+
 /*paragraphe étoiles*/
 .figp p{
     margin: 0%;
 }
 
-/*conteneur étoiles*/
-.st{
-    padding-left: 0px;
+.stp{
+    padding: 0% 0% 1% 1%;
 }
-
 /*-----------------------------------------------------------section"activitée"--------------------------------------------------------*/
 /*section activitées*/
 section.activites{
@@ -302,27 +309,27 @@ div.actiD > div{
 
 /*----------------------images*/
 
-div.actiG > div.gauche > a > figure > img{
+div.actiG > div.gauche > a > figure > picture > img{
     height: 130px;
 }
 
-div.actiG > div.hautG > a > figure > img{
+div.actiG > div.hautG > a > figure > picture > img{
     height: 130px;
 }
 
-div.actiG > div.basG > a > figure > img{
+div.actiG > div.basG > a > figure > picture > img{
     height: 130px;
 }
 
-div.actiD > div.gauche > a > figure > img{
+div.actiD > div.gauche > a > figure > picture > img{
     height: 130px;
 }
 
-div.actiD > div.hautD > a > figure > img{
+div.actiD > div.hautD > a > figure > picture > img{
     height: 130px;
 }
 
-div.actiD > div.basD > a > figure > img{
+div.actiD > div.basD > a > figure > picture > img{
     height: 130px;
 }
 /**************************************/
