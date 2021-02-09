@@ -166,10 +166,11 @@ button{
 }*/
 
 
- form > button >div.text{
+ form > button >span.text{
     font-weight: bolder;
     padding: 1rem;
     font-size: 1rem;
+    display: block;
  }
 /*bouton icône loupe*/
 i.loupe{    
