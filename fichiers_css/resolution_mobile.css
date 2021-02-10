@@ -105,10 +105,10 @@ input#search{
     font-size: 0.8rem;
     
 }
-
-div.text{
+body > main > section.trouv > div.formu > form > button > span{
     display: none;
 }
+
 
 section.trouv > div.formu > form{
     width: 100%;
